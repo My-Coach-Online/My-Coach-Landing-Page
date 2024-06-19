@@ -1,10 +1,14 @@
-import './App.css';
+import { Header } from "./Header/Header";
+import { HeroSection } from "./HeroSection/HeroSection";
 
 function App() {
   return (
-    <div>
-      hey
-    </div>
+    <>
+
+      <Header/>
+      <HeroSection/>
+    
+    </>
   );
 }
 
