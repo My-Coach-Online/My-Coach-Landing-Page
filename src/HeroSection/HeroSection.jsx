@@ -16,7 +16,7 @@ export const HeroSection = () => {
                 FIND YOU PERFECT PERSONAL TRAINER, ANYTYME, ANYWHERE
                 </Heading>
 
-                <Text mt={3} w={460} color={'gray.500'} fontWeight={'regular'}>
+                <Text fontSize={15} mt={3} w={460} color={'gray.500'} fontWeight={'regular'}>
                 Connecting you with certified coaches and personal trainers for tailored fitness journeys
                 </Text>
 
@@ -24,13 +24,13 @@ export const HeroSection = () => {
 
             <Flex mt={20} pos={'relative'} right={98} >
 
-                <Button mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
+                <Button h={42} w={150} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
                     Get Started
                 </Button>
 
-                <Button borderRadius={0} bg={'transparent'} color={'black'}>
+                <Button fontFamily={'inter'} w={150} borderRadius={0} bg={'transparent'} color={'black'} fontWeight={'bold'}>
 
-                    <img style={{marginRight:7, width:30}} src="play-circle.svg" alt="play" />
+                    <img style={{marginRight:12, width:30}} src="play-circle.svg" alt="play" />
 
                             Play video
                 </Button>

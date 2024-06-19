@@ -12,7 +12,7 @@ export const Header =  () =>{
                     <Box justifySelf={'start'}  >
                         <img src="myc1_1.svg" alt="Logo" width={150} height={150} />
                     </Box>
-                    <Flex w={600} justify={'space-around'} color={'gray.600'} fontFamily={'signika'} fontWeight={500}>
+                    <Flex w={600} justify={'space-around'} color={'gray.600'} fontFamily={'inter'} fontWeight={500}>
                         <Link >Home</Link>
                         <Link >About</Link>
                         <Link >Trainers</Link>
