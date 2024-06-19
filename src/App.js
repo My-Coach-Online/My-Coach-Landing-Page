@@ -1,5 +1,6 @@
 import { Header } from "./Header/Header";
 import { HeroSection } from "./HeroSection/HeroSection";
+import Stats from "./Stats/Stats";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
 
       <Header/>
       <HeroSection/>
+      <Stats/>
     
     </>
   );

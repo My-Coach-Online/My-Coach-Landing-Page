@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import React from "react";
+import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 
 export const HeroSection = () => {
@@ -8,9 +9,9 @@ export const HeroSection = () => {
         <Flex>
 
         {/* Text */}
-        <Box m={5} transform={'scale(1.1)'} w={500}  pos={'relative'} top={150} left={210}>
+        <Box m={5} transform={'scale(1.1)'} w={500}  pos={'relative'} top={190} left={210}>
 
-            <Box transform={'scale(1.4)'}>
+            <Box transform={'scale(1.3)'}>
 
                 <Heading fontWeight={'Bold'} fontFamily={'inter'} color={'#2d2d2d'}>
                 FIND YOU PERFECT PERSONAL TRAINER, ANYTYME, ANYWHERE
@@ -22,7 +23,7 @@ export const HeroSection = () => {
 
             </Box>
 
-            <Flex mt={20} pos={'relative'} right={98} >
+            <Flex mt={20} pos={'relative'} right={70} >
 
                 <Button h={42} w={150} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
                     Get Started
@@ -36,16 +37,24 @@ export const HeroSection = () => {
                 </Button>
 
             </Flex>
+
+            <Box color={'black'} display="flex" justifyContent="space-around" alignItems="center" w="200px" p="4" borderRadius="md" pos={'relative'} right={101} mt={5}>
+                    <Icon href="#" as={FaLinkedin} w={6} h={6} color="#2d2d2d" />
+                    <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" />
+                    <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" />
+            </Box>
         </Box>
 
 
         {/* Illustration */}
 
-            <Box transform={'scale(1.3)'} position={'relative'} left={450} top={100}>
+            <Box transform={'scale(0.5)'} position={'relative'} left={180} bottom={450}>
 
-                <img  src="coaches.png" alt="coaches" />
+                <img  src="coach.png" alt="coaches" />
 
             </Box>
+
+            
 
         </Flex>
 
