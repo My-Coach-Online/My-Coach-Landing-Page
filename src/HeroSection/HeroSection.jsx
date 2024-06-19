@@ -25,7 +25,7 @@ export const HeroSection = () => {
 
             <Flex mt={20} pos={'relative'} right={70} >
 
-                <Button h={42} w={150} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
+                <Button _hover={{bg:"gray.600"}} h={42} w={150} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
                     Get Started
                 </Button>
 
