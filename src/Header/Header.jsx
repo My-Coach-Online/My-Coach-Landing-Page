@@ -21,7 +21,7 @@ export const Header =  () =>{
                     </Flex>
                     <Box>
 
-                        <Button bg={'#247CF4'} color={'white'} as={'a'}>
+                        <Button borderRadius={0} bg={'#247CF4'} color={'white'} as={'a'}>
                             Join Now
                         </Button>
 
