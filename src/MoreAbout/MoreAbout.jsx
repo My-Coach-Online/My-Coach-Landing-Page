@@ -7,7 +7,7 @@ export const MoreAbout = () => {
     return(
         <>
 
-            <Flex  transform={'scale(0.85)'} mt={10} >            
+            <Flex  transform={'scale(0.85)'} mt={10} mb={100} >            
                 
                 {/* Pictures */}
 

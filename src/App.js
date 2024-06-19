@@ -3,6 +3,7 @@ import { Header } from "./Header/Header";
 import { HeroSection } from "./HeroSection/HeroSection";
 import Stats from "./Stats/Stats";
 import { MoreAbout } from "./MoreAbout/MoreAbout";
+import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </Box>
       <Stats/>
       <MoreAbout/>
+      <WhyChooseUs/>
     
     </>
   );
