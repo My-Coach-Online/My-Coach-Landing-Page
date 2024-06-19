@@ -6,7 +6,7 @@ import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 export const HeroSection = () => {
     return (
 
-        <Flex>
+        <Flex bg={'white'}>
 
         {/* Text */}
         <Box m={5} transform={'scale(1.1)'} w={500}  pos={'relative'} top={190} left={210}>

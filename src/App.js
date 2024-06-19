@@ -8,16 +8,23 @@ import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 function App() {
   return (
     <>
+      <Box bg={'#F4F4F4'}>
 
-      <Header/>
-      <Box transform={'scale(1)'} h={650}>
+          <Header/>
+          <Box h={650}>
 
-      <HeroSection />
+          <HeroSection />
 
+          </Box>
+          <Stats/>
+          <Box bg={'#F4F4F4'}>
+
+            <MoreAbout />
+
+          </Box>
+          <WhyChooseUs/>
+        
       </Box>
-      <Stats/>
-      <MoreAbout/>
-      <WhyChooseUs/>
     
     </>
   );

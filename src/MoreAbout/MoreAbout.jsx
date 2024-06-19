@@ -7,22 +7,22 @@ export const MoreAbout = () => {
     return(
         <>
 
-            <Flex  transform={'scale(0.85)'} mt={10} mb={100} >            
+            <Flex bg={'#F4F4F4'}  transform={'scale(0.85)'} pt={10} pb={100} >            
                 
                 {/* Pictures */}
 
                 <Box pos={'relative'} top={10}>
 
-                    <Box m={2} >
+                    <Box p={2} >
                         <img src="side-view-kid-practicing-boxing.svg" alt="sparring" />
                     </Box>
-                    <Box m={2} mt={4}>
+                    <Box p={2} pt={4}>
                         <img src="full-stretch-position-yoga-mat.svg" alt="yoga" />
                     </Box>
 
                 </Box>
 
-                <Box m={2} pos={'relative'} top={10}>
+                <Box p={2} pos={'relative'} top={10}>
                         <img src="couple-training-together-gym.svg" alt="gym" />
                 </Box>
 
@@ -32,7 +32,7 @@ export const MoreAbout = () => {
                         More About MyCoach
                     </Heading>
 
-                    <Text color={'gray'} mt={5} mb={5} textAlign={'left'}>
+                    <Text color={'gray'} pt={5} pb={5} textAlign={'left'}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
                       <br/><br/>
@@ -41,7 +41,7 @@ export const MoreAbout = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
                     </Text>
 
-                    <Flex transform={'scale(0.9)'} mt={10} justify={'center'}>
+                    <Flex transform={'scale(0.9)'} pt={10} justify={'center'}>
 
                         <Button _hover={{bg:"gray.600"}} h={42} w={180} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
                             Browse Trainers

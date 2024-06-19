@@ -6,7 +6,7 @@ export const Header =  () =>{
 
 
     return (
-        <Box m={7} >
+        <Box bg={'white'} p={7} >
 
             <Flex justify={'space-between'}>
                     <Box justifySelf={'start'}  >
