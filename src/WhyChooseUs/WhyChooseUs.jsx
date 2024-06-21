@@ -11,10 +11,14 @@ function WhyChooseUs() {
           Why Choose Us
         </Heading>
 
-        <Text w={'80%'} fontSize="lg" color="gray.600" mb={8}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </Text>
+        <Flex    justifyContent="center">
+
+            <Text w={'80%'} fontSize="lg" color="gray.600" mb={8}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </Text>
+
+        </Flex>
 
         <Flex justify="space-around" wrap="wrap" spacing={10}>
 

@@ -14,7 +14,7 @@ export const HeroSection = () => {
             <Box transform={'scale(1.3)'}>
 
                 <Heading fontWeight={'Bold'} fontFamily={'inter'} color={'#2d2d2d'}>
-                FIND YOU PERFECT PERSONAL TRAINER, ANYTYME, ANYWHERE
+                FIND YOU PERFECT PERSONAL COACH, ANYTYME, ANYWHERE
                 </Heading>
 
                 <Text fontSize={15} mt={3} w={460} color={'gray.500'} fontWeight={'regular'}>

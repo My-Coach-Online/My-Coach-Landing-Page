@@ -4,6 +4,7 @@ import { HeroSection } from "./HeroSection/HeroSection";
 import Stats from "./Stats/Stats";
 import { MoreAbout } from "./MoreAbout/MoreAbout";
 import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
+import Categories from "./Categories/Categories";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
           </Box>
           <WhyChooseUs/>
+          <Categories/>
         
       </Box>
     
