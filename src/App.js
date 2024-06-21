@@ -5,6 +5,7 @@ import Stats from "./Stats/Stats";
 import { MoreAbout } from "./MoreAbout/MoreAbout";
 import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 import Categories from "./Categories/Categories";
+import Coaches from "./Choaches/Choaches";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
           </Box>
           <WhyChooseUs/>
+          <Coaches/>
           <Categories/>
         
       </Box>
