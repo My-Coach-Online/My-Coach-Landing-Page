@@ -29,6 +29,7 @@ const TrainingsSection = () => {
     },
     {
       image: 'weightloss.svg', 
+      title: 'Weight Loss',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     },
     {
@@ -39,10 +40,10 @@ const TrainingsSection = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3 ,
     slidesToScroll: 1,
     responsive: [
       {
@@ -66,11 +67,11 @@ const TrainingsSection = () => {
 
   return (
     <ChakraProvider>
-      <Box fontFamily={'inter'} transform={'scale(0.9)'} bg="gray.100" p={10} textAlign="center">
-        <Heading as="h2" size="xl" mb={8}>
+      <Box fontFamily={'inter'} transform={'scale(0.9)'} bg="#F4F4F4" p={10} textAlign="center">
+        <Heading pb={5} as="h2" size="xl" mb={8}>
           Discover All our Trainings
         </Heading>
-        <Slider {...settings}>
+        <Slider  {...settings}>
           {trainings.map((training, index) => (
             <TrainingCard
               key={index}
