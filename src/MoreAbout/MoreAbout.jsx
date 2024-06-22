@@ -7,7 +7,7 @@ export const MoreAbout = () => {
     return(
         <>
 
-            <Flex bg={'#F4F4F4'}  transform={'scale(0.85)'} pt={10} pb={100} >            
+            <Flex  transform={'scale(0.85)'} pt={10} pb={100} >            
                 
                 {/* Pictures */}
 

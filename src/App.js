@@ -11,7 +11,7 @@ import Footer from "./Footer/Footer";
 function App() {
   return (
     <>
-      <Box bg={'#F4F4F4'}>
+      <Box >
 
           <Header/>
           <Box h={650}>
@@ -20,7 +20,7 @@ function App() {
 
           </Box>
           <Stats/>
-          <Box bg={'#F4F4F4'}>
+          <Box >
 
             <MoreAbout />
 

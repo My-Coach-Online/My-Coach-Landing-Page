@@ -88,7 +88,7 @@ const TrainingsSection = () => {
 
   return (
     <ChakraProvider>
-      <Flex justify="center" align="center" bg="#F4F4F4" p={10} minHeight="100vh">
+      <Flex justify="center" align="center" p={10} minHeight="100vh">
         <Box width={["100%", "90%", "80%"]} textAlign="center" p={5} >
           <Heading pb={5} as="h2" size="xl" mb={8}>
             Discover All our Trainings

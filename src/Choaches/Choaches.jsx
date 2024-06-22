@@ -45,7 +45,7 @@ const Coaches = () => {
 
   return (
     <ChakraProvider>
-      <Box transform={'scale(0.9)'} fontFamily={'inter'} bg="#F4F4F4" p={10}>
+      <Box background={'white'} transform={'scale(0.9)'} fontFamily={'inter'}  p={10}>
         <Box pb={10} display={'flex'} justifyContent={'center'}>
 
             <Heading fontFamily={'inter'} >
