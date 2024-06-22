@@ -5,7 +5,7 @@ import { FaHeartbeat, FaSpa, FaHandshake } from 'react-icons/fa';
 
 function WhyChooseUs() {
   return (
-      <Box fontFamily={'inter'} mt={10} p={10} textAlign="center">
+      <Box bg={'#f4f4f4'} fontFamily={'inter'} mt={10} p={20} textAlign="center">
 
         <Heading  as="h2" size="xl" mb={4}>
           Why Choose Us

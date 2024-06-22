@@ -13,7 +13,7 @@ const SlickArrowRight = ({ onClick }) => (
     aria-label="Next slide"
     variant="ghost"
     position="absolute"
-    right="-50px"
+    right="-150"
     top="50%"
     transform="translateY(-50%)"
     zIndex="2"
@@ -29,7 +29,7 @@ const SlickArrowLeft = ({ onClick }) => (
     aria-label="Previous slide"
     variant="ghost"
     position="absolute"
-    left="-50px"
+    left="-150"
     top="52.5%"
     transform="translateY(-50%)"
     zIndex="2"
@@ -41,12 +41,12 @@ const SlickArrowLeft = ({ onClick }) => (
 );
 const TrainingCard = ({ image, title, description }) => {
   return (
-    <Box  bg="white" borderRadius={20} overflow="hidden" boxShadow="md" m={4} maxW="sm">
+    <Box pb={5} textAlign={'start'}  bg="white" borderRadius={20} overflow="hidden" boxShadow="sm" m={4} maxW="sm">
       <Image src={image} alt={title} objectFit="fit" />
       <Box p={4}>
         <Heading as="h4" size="md" mb={2}>{title}</Heading>
         <Text fontWeight={'regular'} mb={4}>{description}</Text>
-        <Button  rightIcon={<ArrowForwardIcon />} colorScheme="black" variant="outline">
+        <Button mt={5} transform={'scale(0.9)'}  rightIcon={<ArrowForwardIcon />} colorScheme="black" variant="outline">
           Sport Information
         </Button>
       </Box>
@@ -88,7 +88,7 @@ const TrainingsSection = () => {
 
   return (
     <ChakraProvider>
-      <Flex justify="center" align="center" p={10} minHeight="100vh">
+      <Flex bg={'#f4f4f4'} justify="center" align="center"  p={20} minHeight="100vh">
         <Box width={["100%", "90%", "80%"]} textAlign="center" p={5} >
           <Heading pb={5} as="h2" size="xl" mb={8}>
             Discover All our Trainings

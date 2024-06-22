@@ -16,7 +16,7 @@ export const MoreAbout = () => {
                     <Box p={2} >
                         <img src="side-view-kid-practicing-boxing.svg" alt="sparring" />
                     </Box>
-                    <Box p={2} pt={4}>
+                    <Box p={2} pt={2}>
                         <img src="full-stretch-position-yoga-mat.svg" alt="yoga" />
                     </Box>
 

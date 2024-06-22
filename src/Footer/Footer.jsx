@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <ChakraProvider>
       {/* Call to Action Section */}
-      <Box mt={20} fontFamily={'inter'} bg="#1E6BD3 " color="white" p={65}>
+      <Box fontFamily={'inter'} bg="#1E6BD3 " color="white" p={65}>
         <Heading as="h2" size="xl" mb={4}>
           What Are You waiting for?
         </Heading>
