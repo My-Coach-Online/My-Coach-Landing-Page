@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Box, Flex, Text, Image, Heading, Stack } from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Text, Image, Heading, Stack, Button } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 
 const TrainerCard = ({ image, name, rating, specialisations }) => {
@@ -64,6 +64,11 @@ const Coaches = () => {
             />
           ))}
         </Flex>
+        <Box mt={16} display={'flex'} justifyContent={'center'}>
+            <Button borderRadius={0} color={'white'} p={6} bg={'gray.800'}>
+              View All Coaches
+            </Button>
+        </Box>
       </Box>
     </ChakraProvider>
   );

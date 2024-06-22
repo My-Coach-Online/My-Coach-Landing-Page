@@ -13,7 +13,7 @@ const SlickArrowRight = ({ onClick }) => (
     aria-label="Next slide"
     variant="ghost"
     position="absolute"
-    right="-0px"
+    right="-50px"
     top="50%"
     transform="translateY(-50%)"
     zIndex="2"
@@ -88,21 +88,23 @@ const TrainingsSection = () => {
 
   return (
     <ChakraProvider>
-      <Box pos={'relative'} left={30} fontFamily={'inter'} transform={'scale(0.9)'} bg="#F4F4F4" p={10} textAlign="center">
-        <Heading pb={5} as="h2" size="xl" mb={8}>
-          Discover All our Trainings
-        </Heading>
-        <Slider  {...settings}>
-          {trainings.map((training, index) => (
-            <TrainingCard
-              key={index}
-              image={training.image}
-              title={training.title}
-              description={training.description}
-            />
-          ))}
-        </Slider>
-      </Box>
+      <Flex justify="center" align="center" bg="#F4F4F4" p={10} minHeight="100vh">
+        <Box width={["100%", "90%", "80%"]} textAlign="center" p={5} >
+          <Heading pb={5} as="h2" size="xl" mb={8}>
+            Discover All our Trainings
+          </Heading>
+          <Slider {...settings}>
+            {trainings.map((training, index) => (
+              <TrainingCard
+                key={index}
+                image={training.image}
+                title={training.title}
+                description={training.description}
+              />
+            ))}
+          </Slider>
+        </Box>
+      </Flex>
 
     </ChakraProvider>
   );
