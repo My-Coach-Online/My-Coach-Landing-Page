@@ -27,7 +27,7 @@ export const HowItWorks = () => {
 
             <Flex justify={'center'}>
 
-                <Image mb={-5} src="SearchIcon.svg" boxSize={120} />
+                <Image  src="SearchIcon.svg" boxSize={120} />
 
                 </Flex>          
 
@@ -41,10 +41,14 @@ export const HowItWorks = () => {
 
             </Box>
 
+            <Box h={6} pos={'relative'} pr={-100}  mr={-100} ml={-100} top={20.1} >
+                    <Image boxSize={200}  h={6} src="fleche.svg" transform="rotateX(180deg)" />
+             </Box>
+
             <Box bg="white" p={6} borderRadius={20}  m={0} width="300px">
                 <Flex justify={'center'}>
 
-                    <Image src="handshake.svg" boxSize={120} />
+                    <Image  src="Calendar.svg" boxSize={120} />
 
                 </Flex>
 
@@ -58,8 +62,8 @@ export const HowItWorks = () => {
 
             </Box>
 
-            <Box h={6} pos={'relative'}  mr={-100} ml={-100} top={150} >
-                    <Image h={6} src="fleche.svg" />
+            <Box h={6} pos={'relative'} pr={-100}  mr={-100} ml={-100} top={115} >
+                    <Image boxSize={200}  h={6} src="fleche.svg" />
              </Box>
 
 
@@ -67,7 +71,7 @@ export const HowItWorks = () => {
             <Box bg="white" p={6} borderRadius={20}  m={0} width="300px">
                 <Flex justify={'center'}>
 
-                    <Image src="handshake.svg" boxSize={120} />
+                    <Image  src="success.svg" boxSize={120} />
 
                 </Flex>
 
