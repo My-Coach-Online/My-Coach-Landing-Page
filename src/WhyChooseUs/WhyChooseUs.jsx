@@ -14,13 +14,13 @@ function WhyChooseUs() {
         <Flex    justifyContent="center">
 
             <Text w={'80%'} fontSize="lg" color="gray.600" mb={8}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals. 
+
             </Text>
 
         </Flex>
 
-        <Flex justify="space-around" wrap="wrap" spacing={10}>
+        <Flex justify="space-around"  spacing={10}>
 
           <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
 
@@ -31,11 +31,11 @@ function WhyChooseUs() {
             </Flex>          
             
             <Heading as="h3" size="md" mb={2}>
-              Nutrition and diet
+                Convenience
             </Heading>
 
             <Text color="gray.600">
-              Lorem ipsum dolor sit amet consectetur.
+                Access a variety of certified coaches from your home.
             </Text>
 
           </Box>
@@ -49,11 +49,11 @@ function WhyChooseUs() {
             </Flex>          
 
             <Heading as="h3" size="md" mb={2}>
-              Nutrition and diet
+              Personalization
             </Heading>
 
             <Text color="gray.600">
-              Lorem ipsum dolor sit amet consectetur.
+              Get tailored workout plans and progress tracking.
             </Text>
 
           </Box>
@@ -66,11 +66,28 @@ function WhyChooseUs() {
             </Flex>
 
             <Heading as="h3" size="md" mb={2}>
-              Nutrition and diet
+              Flexibility
             </Heading>
 
             <Text color="gray.600">
-              Lorem ipsum dolor sit amet consectetur.
+              Book sessions at times and locations that suit you.
+            </Text>
+
+          </Box>
+
+          <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
+            <Flex justify={'center'}>
+
+                <Image src="handshake.svg" boxSize={120} />
+
+            </Flex>
+
+            <Heading as="h3" size="md" mb={2}>
+              Motivation
+            </Heading>
+
+            <Text color="gray.600">
+              Stay motivated with regular check-ins from your coach.
             </Text>
 
           </Box>

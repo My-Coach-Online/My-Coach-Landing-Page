@@ -8,6 +8,7 @@ import Categories from "./Categories/Categories";
 import Coaches from "./Choaches/Choaches";
 import Footer from "./Footer/Footer";
 import ContactUs from "./ContactUs/ContactUs";
+import { HowItWorks } from "./How it works/HowItWorks";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
           </Box>
           <WhyChooseUs/>
+          <HowItWorks/>
           <Coaches/>
           {/* <Categories/> */}
           <ContactUs/>
