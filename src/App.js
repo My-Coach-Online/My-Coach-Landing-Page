@@ -28,7 +28,7 @@ function App() {
           </Box>
           <WhyChooseUs/>
           <Coaches/>
-          <Categories/>
+          {/* <Categories/> */}
           <ContactUs/>
         
           <Footer/>
