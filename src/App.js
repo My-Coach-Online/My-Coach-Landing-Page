@@ -7,6 +7,7 @@ import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 import Categories from "./Categories/Categories";
 import Coaches from "./Choaches/Choaches";
 import Footer from "./Footer/Footer";
+import ContactUs from "./ContactUs/ContactUs";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <WhyChooseUs/>
           <Coaches/>
           <Categories/>
+          <ContactUs/>
         
           <Footer/>
       </Box>

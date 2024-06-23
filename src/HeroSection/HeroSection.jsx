@@ -6,12 +6,15 @@ import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 export const HeroSection = () => {
     return (
 
-        <Flex bg={'white'}>
+        <Flex                 
+        w={["150%", "120%", "100%"]}
+      
+        mb={[10, 10, 0]} bg={'white'}>
 
         {/* Text */}
         <Box m={5} transform={'scale(1.1)'} w={500}  pos={'relative'} top={190} left={210}>
 
-            <Box transform={'scale(1.3)'}>
+            <Box    transform={'scale(1.3)'}>
 
                 <Heading fontWeight={'Bold'} fontFamily={'inter'} color={'#2d2d2d'}>
                 FIND YOU PERFECT PERSONAL COACH, ANYTYME, ANYWHERE
@@ -48,16 +51,13 @@ export const HeroSection = () => {
 
         {/* Illustration */}
 
-            <Box transform={'scale(0.5)'} position={'relative'} left={180} bottom={450}>
+            <Box w={"30%"}  position={'relative'} left={360} bottom={3.5} >
 
                 <img  src="coach.png" alt="coaches" />
 
             </Box>
 
-            
-
         </Flex>
-
 
     )
 }
