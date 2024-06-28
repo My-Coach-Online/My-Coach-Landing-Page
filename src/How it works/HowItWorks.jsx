@@ -27,7 +27,7 @@ export const HowItWorks = () => {
 
             <Flex justify={'center'}>
 
-                <Image  src="SearchIcon.svg" boxSize={120} />
+                <Image  src="searchIcon.svg" boxSize={120} />
 
                 </Flex>          
 
