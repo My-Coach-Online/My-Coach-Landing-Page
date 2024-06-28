@@ -61,7 +61,7 @@ function WhyChooseUs() {
           <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
             <Flex justify={'center'}>
 
-                <Image src="handshake.svg" boxSize={120} />
+                <Image src="flexibility.svg" boxSize={120} />
 
             </Flex>
 

@@ -4,7 +4,7 @@ import { StarIcon } from '@chakra-ui/icons';
 
 const TrainerCard = ({ image, name, rating, specialisations }) => {
   return (
-    <Box bg="white" borderRadius="md" overflow="hidden" boxShadow="md" maxW="sm" m={4}>
+    <Box bg={'#f4f4f4'} borderRadius="md" overflow="hidden" boxShadow="md" maxW="sm" m={4}>
       <Image src={image} alt={name} objectFit="cover" />
       <Box p={4} bg="gray.800" color="white">
         <Flex justify="space-between" align="center" mb={2}>
@@ -45,7 +45,7 @@ const Coaches = () => {
 
   return (
     <ChakraProvider>
-      <Box background={'white'} transform={'scale(0.9)'} fontFamily={'inter'}  p={10}>
+      <Box marginBottom={10} background={'#f4f4f4'} transform={'scale(0.9)'} fontFamily={'inter'}  p={5}>
         <Box pb={10} display={'flex'} justifyContent={'center'}>
 
             <Heading fontFamily={'inter'} >

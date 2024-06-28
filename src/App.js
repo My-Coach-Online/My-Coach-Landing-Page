@@ -29,7 +29,11 @@ function App() {
           </Box>
           <WhyChooseUs/>
           <HowItWorks/>
-          <Coaches/>
+          <Box bg={'#f4f4f4'}>
+
+            <Coaches/>
+
+          </Box>
           {/* <Categories/> */}
           <ContactUs/>
         

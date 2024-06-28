@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaInstagram, FaLinkedin
 const ContactUs = () => {
   return (
     <ChakraProvider>
-            <Box fontFamily={'inter'} mb={-20} bg="#F4F4F4"  textAlign={'center'}>
+            <Box mt={20} fontFamily={'inter'} mb={-20} bg="#white"  textAlign={'center'}>
                 <Heading>
                     Contact us
                 </Heading>
@@ -13,8 +13,8 @@ const ContactUs = () => {
                 Any question or remarks? Just write us a message!
                 </Text>
             </Box>
-      <Flex justify="center" align="center" bg="#F4F4F4"  minHeight="100vh">
-        <Flex width="80%" bg="white" borderRadius="md" boxShadow="md" overflow="hidden">
+      <Flex justify="center" align="center" bg="#white"  minHeight="100vh">
+        <Flex width="80%" bg="gray.50" borderRadius="md" boxShadow="md" overflow="hidden">
           {/* Contact Information Sidebar */}
           <Box bg="#1E6BD3" color="white" p={10} width="35%">
             <Heading as="h3" size="lg" mb={4}>
