@@ -67,7 +67,7 @@ export const HeroSection = () => {
                         fontWeight={'bold'}
                         ml={2}
                     >
-                        <img style={{ marginRight: 12, width: 30 }} src="/play-circle.svg" alt="play" />
+                        <img style={{ marginRight: 12, width: 30 }} src="play-circle.svg" alt="play" />
                         Play video
                     </Button>
                 </Flex>
