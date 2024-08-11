@@ -16,17 +16,9 @@ function App() {
       <Box >
 
           <Header/>
-          <Box h={650}>
-
           <HeroSection />
-
-          </Box>
           <Stats/>
-          <Box >
-
-            <MoreAbout />
-
-          </Box>
+          <MoreAbout />
           <WhyChooseUs/>
           <HowItWorks/>
           <Box bg={'#f4f4f4'}>

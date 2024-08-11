@@ -5,7 +5,7 @@ import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 export const HeroSection = () => {
     return (
         <Flex
-            w={["100%", "90%", "80%"]}
+            w={"100%"}
             mx="auto"
             mb={[10, 10, 0]}
             bg={'white'}
@@ -92,7 +92,7 @@ export const HeroSection = () => {
                 order={[1, 1, 2]}
                 mb={[6, 6, 0]}
             >
-                <img src="/partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
+                <img src="partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
             </Box>
         </Flex>
     );

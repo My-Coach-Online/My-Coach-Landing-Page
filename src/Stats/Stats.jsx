@@ -5,9 +5,9 @@ function Stats() {
   return (
     <Box 
       bg="#247CF4" 
+      color="white"
       p={[5, 8, 10]}  // Responsive padding
-      w={["100%", "90%", "80%"]} // Responsive width
-      mx="auto"  // Center the component horizontally
+      w="100%"  // Full width for all screen sizes
     >
       <Flex 
         justify={["center", "space-around"]}  // Adjust justify content
@@ -16,7 +16,7 @@ function Stats() {
         color="white" 
         textAlign={["center", "center", "left"]}  // Center text on small screens
       >
-        <Box mb={[4, 4, 0]}>  // Add margin at the bottom for spacing on small screens
+        <Box mb={[4, 4, 0]}> 
           <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">500+</Text>
           <Text fontSize={["lg", "xl"]} fontWeight="bold">Happy Members</Text>
           <Text>Our community is growing fast</Text>
@@ -32,7 +32,7 @@ function Stats() {
           <Text>Guidance at every step</Text>
         </Box>
         <Box>
-          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">90%/</Text>
+          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">90%</Text>
           <Text fontSize={["lg", "xl"]} fontWeight="bold">Customer Satisfaction</Text>
           <Text>We ensure your progress satisfaction</Text>
         </Box>
