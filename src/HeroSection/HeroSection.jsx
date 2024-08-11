@@ -92,7 +92,7 @@ export const HeroSection = () => {
                 order={[1, 1, 2]}
                 mb={[6, 6, 0]}
             >
-                <img src="/coach.png" alt="coaches" style={{ width: "100%" }} />
+                <img src="/partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
             </Box>
         </Flex>
     );
