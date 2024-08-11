@@ -2,62 +2,98 @@ import { Box, Button, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
-
 export const HeroSection = () => {
     return (
-
-        <Flex                 
-        w={["150%", "120%", "100%"]}
-      
-        mb={[10, 10, 0]} bg={'white'}>
-
-        {/* Text */}
-        <Box m={5} transform={'scale(1.1)'} w={500}  pos={'relative'} top={190} left={210}>
-
-            <Box    transform={'scale(1.3)'}>
-
-                <Heading fontWeight={'Bold'} fontFamily={'inter'} color={'#2d2d2d'}>
-                FIND YOUR PERFECT PERSONAL COACH, ANYTYME, ANYWHERE
+        <Flex
+            w={["100%", "90%", "80%"]}
+            mx="auto"
+            mb={[10, 10, 0]}
+            bg={'white'}
+            flexDirection={["column", "column", "row"]}
+            alignItems="center"
+            justifyContent="space-between"
+            p={[4, 6, 8]}
+        >
+            {/* Text */}
+            <Box
+                m={5}
+                w={["100%", "80%", "50%"]}
+                pos={'relative'}
+                textAlign={["center", "center", "left"]}
+                order={[2, 2, 1]}
+            >
+                <Heading
+                    fontWeight={'bold'}
+                    fontFamily={'inter'}
+                    color={'#2d2d2d'}
+                    fontSize={["lg", "xl", "2xl", "4xl"]}
+                >
+                    FIND YOUR PERFECT PERSONAL COACH, ANYTIME, ANYWHERE
                 </Heading>
 
-                <Text fontSize={15} mt={3} w={460} color={'gray.500'} fontWeight={'regular'}>
-                Connecting you with certified coaches and personal trainers for tailored fitness journeys
+                <Text
+                    fontSize={["sm", "md", "lg"]}
+                    mt={3}
+                    w={["100%", "100%", "80%"]}
+                    mx={["auto", "auto", "0"]}
+                    color={'gray.500'}
+                    fontWeight={'regular'}
+                >
+                    Connecting you with certified coaches and personal trainers for tailored fitness journeys
                 </Text>
 
+                <Flex
+                    mt={10}
+                    justifyContent={["center", "center", "flex-start"]}
+                >
+                    <Button
+                        _hover={{ bg: "gray.600" }}
+                        h={10}
+                        w={["120px", "140px", "150px"]}
+                        mr={2}
+                        bg={'#2d2d2d'}
+                        color={'white'}
+                        borderRadius={0}
+                    >
+                        Get Started
+                    </Button>
+
+                    <Button
+                        fontFamily={'inter'}
+                        w={["120px", "140px", "150px"]}
+                        borderRadius={0}
+                        bg={'transparent'}
+                        color={'black'}
+                        fontWeight={'bold'}
+                        ml={2}
+                    >
+                        <img style={{ marginRight: 12, width: 30 }} src="/play-circle.svg" alt="play" />
+                        Play video
+                    </Button>
+                </Flex>
+
+                <Box
+                    display="flex"
+                    justifyContent={["center", "center", "flex-start"]}
+                    alignItems="center"
+                    w="100%"
+                    mt={5}
+                >
+                    <Icon as={FaLinkedin} w={6} h={6} color="#2d2d2d" mx={2} />
+                    <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" mx={2} />
+                    <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
+                </Box>
             </Box>
 
-            <Flex mt={20} pos={'relative'} right={70} >
-
-                <Button _hover={{bg:"gray.600"}} h={42} w={150} mr={2}  bg={'#2d2d2d'} color={'white'} borderRadius={0}>
-                    Get Started
-                </Button>
-
-                <Button fontFamily={'inter'} w={150} borderRadius={0} bg={'transparent'} color={'black'} fontWeight={'bold'}>
-
-                    <img style={{marginRight:12, width:30}} src="play-circle.svg" alt="play" />
-
-                            Play video
-                </Button>
-
-            </Flex>
-
-            <Box color={'black'} display="flex" justifyContent="space-around" alignItems="center" w="200px" p="4" borderRadius="md" pos={'relative'} right={101} mt={5}>
-                    <Icon href="#" as={FaLinkedin} w={6} h={6} color="#2d2d2d" />
-                    <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" />
-                    <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" />
+            {/* Illustration */}
+            <Box
+                w={["80%", "70%", "50%"]}
+                mx="auto"
+                order={[1, 1, 2]}
+                mb={[6, 6, 0]}
+            >
+                <img src="/coach.png" alt="coaches" style={{ width: "100%" }} />
             </Box>
-        </Box>
-
-
-        {/* Illustration */}
-
-            <Box w={"30%"}  position={'relative'} left={360} bottom={3.5} >
-
-                <img  src="coach.png" alt="coaches" />
-
-            </Box>
-
         </Flex>
-
-    )
+    );
 }

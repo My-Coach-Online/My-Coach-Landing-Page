@@ -1,11 +1,19 @@
 import React from 'react';
-import { ChakraProvider, Box, Flex, Text, Image, Heading, Stack, Button } from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Text, Image, Heading, Button, Stack } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 
 const TrainerCard = ({ image, name, rating, specialisations }) => {
   return (
-    <Box bg={'#f4f4f4'} borderRadius="md" overflow="hidden" boxShadow="md" maxW="sm" m={4}>
-      <Image src={image} alt={name} objectFit="cover" />
+    <Box 
+      bg={'#f4f4f4'} 
+      borderRadius="md" 
+      overflow="hidden" 
+      boxShadow="md" 
+      maxW={["100%", "45%", "sm"]} 
+      m={4}
+      width={["100%", "45%", "sm"]}  // Adjust width for different screen sizes
+    >
+      <Image src={image} alt={name} objectFit="cover" w="100%" h={["200px", "250px", "300px"]} />
       <Box p={4} bg="gray.800" color="white">
         <Flex justify="space-between" align="center" mb={2}>
           <Heading as="h3" fontWeight={'regular'} size="md">{name}</Heading>
@@ -45,13 +53,17 @@ const Coaches = () => {
 
   return (
     <ChakraProvider>
-      <Box marginBottom={10} background={'#f4f4f4'} transform={'scale(0.9)'} fontFamily={'inter'}  p={5}>
-        <Box pb={10} display={'flex'} justifyContent={'center'}>
-
-            <Heading fontFamily={'inter'} >
-                Meet Our Coaches
-            </Heading>
-
+      <Box 
+        mb={10} 
+        bg={'#f4f4f4'} 
+        fontFamily={'inter'}  
+        p={[5, 8, 10]}
+        transform={["scale(1)", "scale(0.95)", "scale(0.9)"]}
+      >
+        <Box pb={10} textAlign={'center'}>
+          <Heading fontFamily={'inter'} fontSize={["2xl", "3xl", "4xl"]}>
+            Meet Our Coaches
+          </Heading>
         </Box>
         <Flex justify="center" wrap="wrap">
           {trainers.map((trainer, index) => (
@@ -64,10 +76,16 @@ const Coaches = () => {
             />
           ))}
         </Flex>
-        <Box mt={16} display={'flex'} justifyContent={'center'}>
-            <Button borderRadius={0} color={'white'} p={6} bg={'gray.800'}>
-              View All Coaches
-            </Button>
+        <Box mt={16} textAlign={'center'}>
+          <Button 
+            borderRadius={0} 
+            color={'white'} 
+            p={6} 
+            bg={'gray.800'}
+            w={["80%", "60%", "auto"]}
+          >
+            View All Coaches
+          </Button>
         </Box>
       </Box>
     </ChakraProvider>

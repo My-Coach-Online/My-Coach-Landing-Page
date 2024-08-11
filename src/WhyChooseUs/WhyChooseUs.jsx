@@ -1,100 +1,103 @@
 import React from 'react';
-import { ChakraProvider, Box, Flex, Text, Icon, Image ,Heading } from '@chakra-ui/react';
-import { FaHeartbeat, FaSpa, FaHandshake } from 'react-icons/fa';
-
+import { ChakraProvider, Box, Flex, Text, Image, Heading } from '@chakra-ui/react';
 
 function WhyChooseUs() {
   return (
-      <Box bg={'#f4f4f4'} fontFamily={'inter'} mt={10} p={20} textAlign="center">
+    <Box bg={'#f4f4f4'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+      <Heading as="h2" size="xl" mb={4}>
+        Why Choose Us
+      </Heading>
 
-        <Heading  as="h2" size="xl" mb={4}>
-          Why Choose Us
-        </Heading>
+      <Flex justifyContent="center">
+        <Text
+          w={["90%", "80%", "70%"]}
+          fontSize={["md", "lg"]}
+          color="gray.600"
+          mb={8}
+        >
+          Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals.
+        </Text>
+      </Flex>
 
-        <Flex    justifyContent="center">
+      <Flex
+        justify="space-around"
+        alignItems="center"
+        flexWrap="wrap"
+        spacing={10}
+      >
+        <Box
+          bg="white"
+          p={6}
+          borderRadius={20}
+          m={4}
+          width={["100%", "45%", "300px"]}
+        >
+          <Flex justify={'center'} mb={4}>
+            <Image src="healthIcon.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Convenience
+          </Heading>
+          <Text color="gray.600">
+            Access a variety of certified coaches from your home.
+          </Text>
+        </Box>
 
-            <Text w={'80%'} fontSize="lg" color="gray.600" mb={8}>
-            Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals. 
+        <Box
+          bg="white"
+          p={6}
+          borderRadius={20}
+          m={4}
+          width={["100%", "45%", "300px"]}
+        >
+          <Flex justify={'center'} mb={4}>
+            <Image src="YogaIcon.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Personalization
+          </Heading>
+          <Text color="gray.600">
+            Get tailored workout plans and progress tracking.
+          </Text>
+        </Box>
 
-            </Text>
+        <Box
+          bg="white"
+          p={6}
+          borderRadius={20}
+          m={4}
+          width={["100%", "45%", "300px"]}
+        >
+          <Flex justify={'center'} mb={4}>
+            <Image src="flexibility.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Flexibility
+          </Heading>
+          <Text color="gray.600">
+            Book sessions at times and locations that suit you.
+          </Text>
+        </Box>
 
-        </Flex>
-
-        <Flex justify="space-around"  spacing={10}>
-
-          <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
-
-          <Flex justify={'center'}>
-
-            <Image src="healthIcon.svg" boxSize={120} />
-
-            </Flex>          
-            
-            <Heading as="h3" size="md" mb={2}>
-                Convenience
-            </Heading>
-
-            <Text color="gray.600">
-                Access a variety of certified coaches from your home.
-            </Text>
-
-          </Box>
-
-          <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
-
-          <Flex justify={'center'}>
-
-            <Image src="YogaIcon.svg" boxSize={120} />
-
-            </Flex>          
-
-            <Heading as="h3" size="md" mb={2}>
-              Personalization
-            </Heading>
-
-            <Text color="gray.600">
-              Get tailored workout plans and progress tracking.
-            </Text>
-
-          </Box>
-
-          <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
-            <Flex justify={'center'}>
-
-                <Image src="flexibility.svg" boxSize={120} />
-
-            </Flex>
-
-            <Heading as="h3" size="md" mb={2}>
-              Flexibility
-            </Heading>
-
-            <Text color="gray.600">
-              Book sessions at times and locations that suit you.
-            </Text>
-
-          </Box>
-
-          <Box bg="white" p={6} borderRadius={20}  m={4} width="300px">
-            <Flex justify={'center'}>
-
-                <Image src="handshake.svg" boxSize={120} />
-
-            </Flex>
-
-            <Heading as="h3" size="md" mb={2}>
-              Motivation
-            </Heading>
-
-            <Text color="gray.600">
-              Stay motivated with regular check-ins from your coach.
-            </Text>
-
-          </Box>
-
-        </Flex>
-
-      </Box>
+        <Box
+          bg="white"
+          p={6}
+          borderRadius={20}
+          m={4}
+          width={["100%", "45%", "300px"]}
+        >
+          <Flex justify={'center'} mb={4}>
+            <Image src="handshake.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Motivation
+          </Heading>
+          <Text color="gray.600">
+            Stay motivated with regular check-ins from your coach.
+          </Text>
+        </Box>
+      </Flex>
+    </Box>
   );
 }
 

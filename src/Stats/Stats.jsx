@@ -3,29 +3,37 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 
 function Stats() {
   return (
-    <Box bg="#247CF4" p={10}
-    w={["150%", "120%", "100%"]}
-
+    <Box 
+      bg="#247CF4" 
+      p={[5, 8, 10]}  // Responsive padding
+      w={["100%", "90%", "80%"]} // Responsive width
+      mx="auto"  // Center the component horizontally
     >
-      <Flex justify="space-around" color="white" textAlign="center">
-        <Box>
-          <Text fontSize={28} fontWeight="bold">500+</Text>
-          <Text fontSize="xl" fontWeight="bold">Happy Members</Text>
+      <Flex 
+        justify={["center", "space-around"]}  // Adjust justify content
+        alignItems="center"  // Center items vertically
+        flexDirection={["column", "column", "row"]}  // Stack boxes on small screens
+        color="white" 
+        textAlign={["center", "center", "left"]}  // Center text on small screens
+      >
+        <Box mb={[4, 4, 0]}>  // Add margin at the bottom for spacing on small screens
+          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">500+</Text>
+          <Text fontSize={["lg", "xl"]} fontWeight="bold">Happy Members</Text>
           <Text>Our community is growing fast</Text>
         </Box>
-        <Box>
-          <Text fontSize={28} fontWeight="bold">5+</Text>
-          <Text fontSize="xl" fontWeight="bold">Year Experience</Text>
+        <Box mb={[4, 4, 0]}>
+          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">5+</Text>
+          <Text fontSize={["lg", "xl"]} fontWeight="bold">Year Experience</Text>
           <Text>Experience in various workouts</Text>
         </Box>
-        <Box>
-          <Text fontSize={28} fontWeight="bold">13+</Text>
-          <Text fontSize="xl" fontWeight="bold">Certified Trainers</Text>
+        <Box mb={[4, 4, 0]}>
+          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">13+</Text>
+          <Text fontSize={["lg", "xl"]} fontWeight="bold">Certified Trainers</Text>
           <Text>Guidance at every step</Text>
         </Box>
         <Box>
-          <Text fontSize={28} fontWeight="bold">90%</Text>
-          <Text fontSize="xl" fontWeight="bold">Customer Satisfaction</Text>
+          <Text fontSize={["24px", "26px", "28px"]} fontWeight="bold">90%/</Text>
+          <Text fontSize={["lg", "xl"]} fontWeight="bold">Customer Satisfaction</Text>
           <Text>We ensure your progress satisfaction</Text>
         </Box>
       </Flex>

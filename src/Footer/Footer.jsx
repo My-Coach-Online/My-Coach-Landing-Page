@@ -1,32 +1,35 @@
 import React from 'react';
-import { ChakraProvider, Box, Flex, Text, Heading, Link, Stack, Image, Grid } from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Text, Heading, Link, Stack, Image } from '@chakra-ui/react';
 import { FaLinkedin, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <ChakraProvider>
       {/* Call to Action Section */}
-      <Box fontFamily={'inter'} bg="#1E6BD3 " color="white" p={65}>
+      <Box fontFamily={'inter'} bg="#1E6BD3" color="white" p={[8, 10, 16]}>
         <Heading as="h2" size="xl" mb={4}>
-          What Are You waiting for?
+          What Are You Waiting For?
         </Heading>
-        <Text w={800} fontSize="md" mb={4}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur
- adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.eiusmod tempor incididunt.
+        <Text
+          w={["100%", "90%", "800px"]}
+          fontSize={["sm", "md"]}
+          mb={4}
+          mx="auto"
+          textAlign="center"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
         </Text>
       </Box>
 
       {/* Footer Section */}
       <Box bg="white" color="gray.700" py={10}>
-        <Flex justify="space-around" wrap="wrap" px={10}>
+        <Flex justify="space-around" wrap="wrap" px={[5, 10]} textAlign={['center', 'center', 'left']}>
           <Box w={['100%', '100%', '30%']} mb={[5, 5, 0]}>
-            <Flex mb={7} justify={'start'}>
-                <Box>
-                    <Image h={'auto'} w={'200px'} src='myc1_1.svg'/>
-                </Box>
+            <Flex justify={['center', 'center', 'start']} mb={7}>
+              <Image h={'auto'} w={'200px'} src='myc1_1.svg' />
             </Flex>
-            <Text color={'gray.500'}  fontSize="md">
+            <Text color={'gray.500'} fontSize="md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
             </Text>
@@ -48,25 +51,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
               Social Media
             </Heading>
             <Stack spacing={2}>
-              <Flex align="center">
+              <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaLinkedin />
                 <Link href="#" ml={2}>
                   LinkedIn
                 </Link>
               </Flex>
-              <Flex align="center">
+              <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaFacebook />
                 <Link href="#" ml={2}>
                   Facebook
                 </Link>
               </Flex>
-              <Flex align="center">
+              <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaInstagram />
                 <Link href="#" ml={2}>
                   Instagram
                 </Link>
               </Flex>
-              <Flex align="center">
+              <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaGithub />
                 <Link href="#" ml={2}>
                   Github

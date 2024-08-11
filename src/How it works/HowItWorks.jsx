@@ -1,93 +1,85 @@
 import React from "react";
-import { ChakraProvider, Box, Flex, Text, Icon, Image ,Heading } from '@chakra-ui/react';
-import { FaHeartbeat, FaSpa, FaHandshake } from 'react-icons/fa';
-
+import { Box, Flex, Text, Image, Heading } from '@chakra-ui/react';
 
 export const HowItWorks = () => {
-    return (
-        <Box>
-             <Box fontFamily={'inter'} mt={10} p={20} textAlign="center">
+  return (
+    <Box fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+      <Heading as="h2" size="xl" mb={4}>
+        How It Works
+      </Heading>
 
-            <Heading  as="h2" size="xl" mb={4}>
-            How It Works
-            </Heading>
+      <Flex justifyContent="center">
+        <Text w={["90%", "80%", "70%"]} fontSize={["md", "lg"]} color="gray.600" mb={8}>
+          Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals.
+        </Text>
+      </Flex>
 
-            <Flex    justifyContent="center">
-
-                <Text w={'80%'} fontSize="lg" color="gray.600" mb={8}>
-                Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals. 
-
-                </Text>
-
-            </Flex>
-
-            <Flex justify="space-around"  m={50}>
-
-            <Box bg="white" p={6} borderRadius={20}  m={0} width="300px">
-
-            <Flex justify={'center'}>
-
-                <Image  src="searchIcon.svg" boxSize={120} />
-
-                </Flex>          
-
-                <Heading as="h3" size="md" mb={2}>
-                    Choose a Coach
-                </Heading>
-
-                <Text color="gray.600">
-                    Browse and select a certified coach.
-                </Text>
-
-            </Box>
-
-            <Box h={6} pos={'relative'} pr={-100}  mr={-100} ml={-100} top={20.1} >
-                    <Image boxSize={200}  h={6} src="fleche.svg" transform="rotateX(180deg)" />
-             </Box>
-
-            <Box bg="white" p={6} borderRadius={20}  m={0} width="300px">
-                <Flex justify={'center'}>
-
-                    <Image  src="Calendar.svg" boxSize={120} />
-
-                </Flex>
-
-                <Heading as="h3" size="md" mb={2}>
-                    Book a Session
-                </Heading>
-
-                <Text color="gray.600">
-                Book sessions at times and locations that suit you.
-                </Text>
-
-            </Box>
-
-            <Box h={6} pos={'relative'} pr={-100}  mr={-100} ml={-100} top={115} >
-                    <Image boxSize={200}  h={6} src="fleche.svg" />
-             </Box>
-
-
-
-            <Box bg="white" p={6} borderRadius={20}  m={0} width="300px">
-                <Flex justify={'center'}>
-
-                    <Image  src="success.svg" boxSize={120} />
-
-                </Flex>
-
-                <Heading as="h3" size="md" mb={2}>
-                    Achieve Your Goals
-                </Heading>
-
-                <Text color="gray.600">
-                    Follow your personalized plan and get feedback.
-                </Text>
-
-            </Box>
-
-            </Flex>
-
-            </Box>        
+      <Flex
+        justify="space-around"
+        alignItems="center"
+        flexDirection={["column", "column", "row"]}
+        flexWrap="wrap"
+        m={50}
+      >
+        {/* Step 1 */}
+        <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
+          <Flex justify={'center'} mb={4}>
+            <Image src="searchIcon.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Choose a Coach
+          </Heading>
+          <Text color="gray.600">
+            Browse and select a certified coach.
+          </Text>
         </Box>
-    )
-}
+
+        {/* Arrow 1 */}
+        <Box
+          h={6}
+          pos={'relative'}
+          my={[4, 4, 0]}
+          display={["none", "none", "block"]}
+        >
+          <Image boxSize={50} src="fleche.svg" transform="rotate(180deg)" />
+        </Box>
+
+        {/* Step 2 */}
+        <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
+          <Flex justify={'center'} mb={4}>
+            <Image src="Calendar.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Book a Session
+          </Heading>
+          <Text color="gray.600">
+            Book sessions at times and locations that suit you.
+          </Text>
+        </Box>
+
+        {/* Arrow 2 */}
+        <Box
+          h={6}
+          pos={'relative'}
+          my={[4, 4, 0]}
+          display={["none", "none", "block"]}
+        >
+          <Image boxSize={50} src="fleche.svg" />
+        </Box>
+
+        {/* Step 3 */}
+        <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
+          <Flex justify={'center'} mb={4}>
+            <Image src="success.svg" boxSize={["80px", "100px", "120px"]} />
+          </Flex>
+          <Heading as="h3" size="md" mb={2}>
+            Achieve Your Goals
+          </Heading>
+          <Text color="gray.600">
+            Follow your personalized plan and get feedback.
+          </Text>
+        </Box>
+      </Flex>
+    </Box>
+  );
+};
