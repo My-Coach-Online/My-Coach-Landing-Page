@@ -87,7 +87,7 @@ export const HeroSection = () => {
 
             {/* Illustration */}
             <Box
-                w={["80%", "70%", "50%"]}
+                w={["0%", "70%", "50%"]}
                 mx="auto"
                 order={[1, 1, 2]}
                 mb={[6, 6, 0]}
