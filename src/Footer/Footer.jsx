@@ -11,11 +11,11 @@ const Footer = () => {
           What Are You Waiting For?
         </Heading>
         <Text
-          w={["100%", "90%", "800px"]}
+          // w={["70%%", "80%", "85%"]}
           fontSize={["sm", "md"]}
           mb={4}
           mx="auto"
-          textAlign="center"
+          textAlign="start"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.

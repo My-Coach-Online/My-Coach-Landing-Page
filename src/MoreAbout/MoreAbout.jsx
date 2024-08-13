@@ -50,17 +50,17 @@ export const MoreAbout = () => {
         pos="relative"
         top={[0, 50]}
         left={[0, 0, 50]}
-        w={["100%", "100%", "451px"]}
+        w={["90%", "80%", "451px"]}
         fontFamily="inter"
         textAlign={["center", "left"]}
       >
-        <Flex justify={["center", "start"]}>
-          <Heading fontSize={["32px", "36px", "42px"]} pb={3} color="#2d2d2d">
+        <Flex w={"fit-content"}  justify={["center", "start"]}>
+          <Heading fontSize={["32px", "36px", "42px"]} w={"-moz-fit-content"} pb={3} color="#2d2d2d">
             About MyCoach
           </Heading>
         </Flex>
 
-        <Text color="gray" pt={5} pb={5} textAlign="left">
+        <Text color="gray" pt={5} pb={5} textAlign="left" w={"80%"}>
           My Coach is a cutting-edge platform designed to bridge the gap between
           fitness enthusiasts and certified sports coaches. We understand that
           achieving your fitness goals can be challenging without the right

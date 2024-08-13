@@ -3,7 +3,7 @@ import { Box, Flex, Text, Image, Heading } from '@chakra-ui/react';
 
 export const HowItWorks = () => {
   return (
-    <Box bg={'green'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
         How It Works
       </Heading>
