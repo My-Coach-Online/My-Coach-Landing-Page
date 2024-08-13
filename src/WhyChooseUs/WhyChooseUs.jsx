@@ -29,7 +29,7 @@ function WhyChooseUs() {
           bg="white"
           p={6}
           borderRadius={20}
-          m={4}
+          m={1}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -47,7 +47,7 @@ function WhyChooseUs() {
           bg="white"
           p={6}
           borderRadius={20}
-          m={4}
+          m={1}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -65,7 +65,7 @@ function WhyChooseUs() {
           bg="white"
           p={6}
           borderRadius={20}
-          m={4}
+          m={1}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -83,7 +83,7 @@ function WhyChooseUs() {
           bg="white"
           p={6}
           borderRadius={20}
-          m={4}
+          m={1}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>

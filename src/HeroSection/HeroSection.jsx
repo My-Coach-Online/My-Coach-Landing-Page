@@ -91,6 +91,8 @@ export const HeroSection = () => {
                 mx="auto"
                 order={[1, 1, 2]}
                 mb={[6, 6, 0]}
+                pos={'relative'}
+                top={50}
             >
                 <img src="partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
             </Box>
