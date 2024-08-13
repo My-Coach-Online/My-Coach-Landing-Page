@@ -87,12 +87,12 @@ export const HeroSection = () => {
 
             {/* Illustration */}
             <Box
-                w={["0%", "70%", "50%"]}
+                w={["0%", "0%" ,"70%", "50%"]}
                 mx="auto"
                 order={[1, 1, 2]}
                 mb={[6, 6, 0]}
                 pos={'relative'}
-                top={50}
+                top={[70, 30]}
             >
                 <img src="partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
             </Box>

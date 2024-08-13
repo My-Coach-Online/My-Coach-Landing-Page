@@ -3,7 +3,7 @@ import { Box, Flex, Text, Image, Heading } from '@chakra-ui/react';
 
 export const HowItWorks = () => {
   return (
-    <Box fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box bg={'green'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
         How It Works
       </Heading>
@@ -34,7 +34,7 @@ export const HowItWorks = () => {
           </Text>
         </Box>
 
-        {/* Arrow 1 */}
+        {/* Arrow 1
         <Box
           h={6}
           pos={'relative'}
@@ -42,7 +42,7 @@ export const HowItWorks = () => {
           display={["none", "none", "block"]}
         >
           <Image boxSize={50} src="fleche.svg" transform="rotate(180deg)" />
-        </Box>
+        </Box> */}
 
         {/* Step 2 */}
         <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
@@ -57,7 +57,7 @@ export const HowItWorks = () => {
           </Text>
         </Box>
 
-        {/* Arrow 2 */}
+        {/* Arrow 2
         <Box
           h={6}
           pos={'relative'}
@@ -65,7 +65,7 @@ export const HowItWorks = () => {
           display={["none", "none", "block"]}
         >
           <Image boxSize={50} src="fleche.svg" />
-        </Box>
+        </Box> */}
 
         {/* Step 3 */}
         <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>

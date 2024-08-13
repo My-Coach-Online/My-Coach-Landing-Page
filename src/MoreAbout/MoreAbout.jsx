@@ -11,7 +11,7 @@ export const MoreAbout = () => {
       justify="center"
       alignItems="center"
     >
-      {/* Pictures */}
+      {/* Pictures
       <Flex
         flexDirection={["column", "row"]}
         alignItems="center"
@@ -42,7 +42,7 @@ export const MoreAbout = () => {
             style={{ width: "100%", maxWidth: "200px" }}
           />
         </Box>
-      </Flex>
+      </Flex> */}
 
       {/* Text */}
       <Box
