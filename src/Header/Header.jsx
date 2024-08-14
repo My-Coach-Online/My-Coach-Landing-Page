@@ -1,57 +1,74 @@
-import { Box, Button, Flex, Link } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
+import { Box, Flex, Heading, Link, Stack, IconButton, Drawer, DrawerBody, DrawerOverlay, DrawerContent, DrawerCloseButton, Button } from "@chakra-ui/react";
+import { FaBars } from "react-icons/fa";
 
 export const Header = () => {
-  return (
-    <Box bg={'white'} p={[4, 5, 7]}>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <Flex 
-        justify={'space-between'} 
-        alignItems={'center'} 
-        flexDirection={["column", "column", "row"]}
-      >
-        
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <Box bg={'white'} p={7} boxShadow="md">
+      <Flex justify={'space-between'} alignItems="center">
         {/* Logo */}
-        <Box 
-          justifySelf={'start'} 
-          mb={[4, 4, 0]}
-        >
-          <img src="myc1_1.svg" alt="Logo" width={100} height={100} />
+        <Box>
+          <img src="myc1_1.svg" alt="Logo" width={150} height={150} />
         </Box>
 
-        {/* Navigation Links */}
-        <Flex 
-          w={["100%", "80%", "50%"]} 
-          justify={['space-around', 'space-between', 'space-between']} 
-          color={'gray.600'} 
-          fontFamily={'inter'} 
+        {/* Navigation Links - Hidden on small screens */}
+        <Flex
+          w={600}
+          justify={'space-around'}
+          color={'gray.600'}
+          fontFamily={'inter'}
           fontWeight={500}
-          flexDirection={["column","row" ,"row"]}
-          alignItems={["center", "center", "flex-start"]}
-          mb={[4, 4, 0]}
+          display={["none", "none", "flex"]}  // Hidden on small screens
         >
-          <Link mb={[2, 2, 0]}>Home</Link>
-          <Link mb={[2, 2, 0]}>About</Link>
-          <Link mb={[2, 2, 0]}>Trainers</Link>
-          <Link mb={[2, 2, 0]}>Categories</Link>
+          <Link>Home</Link>
+          <Link>About</Link>
+          <Link>Trainers</Link>
+          <Link>Categories</Link>
           <Link>Review</Link>
         </Flex>
 
+        {/* Hamburger Menu Button - Visible on small screens */}
+        <IconButton
+          aria-label="Open Menu"
+          icon={<FaBars />}
+          display={["flex", "flex", "none"]}  // Visible on small screens
+          onClick={toggleDrawer}
+        />
+
+        {/* Drawer for Mobile Navigation */}
+        <Drawer placement="right" onClose={toggleDrawer} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerBody>
+              <Stack spacing={4} mt={10}>
+                <Link onClick={toggleDrawer}>Home</Link>
+                <Link onClick={toggleDrawer}>About</Link>
+                <Link onClick={toggleDrawer}>Trainers</Link>
+                <Link onClick={toggleDrawer}>Categories</Link>
+                <Link onClick={toggleDrawer}>Review</Link>
+              </Stack>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+
         {/* Join Now Button */}
-        <Box>
-          <Button 
-            borderRadius={0} 
-            bg={'#247CF4'} 
-            color={'white'} 
-            as={'a'} 
-            w={["100%", "100%", "auto"]}
-          >
-            Join Now
-          </Button>
-        </Box>
-
+        <Button
+          borderRadius={0}
+          bg={'#247CF4'}
+          color={'white'}
+          as={'a'}
+          display={["none", "none", "inline-flex"]}  // Hidden on small screens
+        >
+          Join Now
+        </Button>
       </Flex>
-
     </Box>
-  )
-}
+  );
+};
