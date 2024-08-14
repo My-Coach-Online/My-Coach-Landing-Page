@@ -30,7 +30,8 @@ export const HowItWorks = () => {
             Choose a Coach
           </Heading>
           <Text color="gray.600">
-            Browse and select a certified coach.
+            Browse and select a certified coach.        
+                 <br/> <br />
           </Text>
         </Box>
 
