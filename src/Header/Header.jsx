@@ -21,12 +21,12 @@ export const Header = () => {
 
         {/* Navigation Links */}
         <Flex 
-          w={["100%", "100%", "600px"]} 
-          justify={['space-around', 'space-around', 'space-between']} 
+          w={["100%", "80%", "50%"]} 
+          justify={['space-around', 'space-between', 'space-between']} 
           color={'gray.600'} 
           fontFamily={'inter'} 
           fontWeight={500}
-          flexDirection={["column", "column", "row"]}
+          flexDirection={["column","row" ,"row"]}
           alignItems={["center", "center", "flex-start"]}
           mb={[4, 4, 0]}
         >
