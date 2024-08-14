@@ -5,7 +5,6 @@ import { StarIcon } from '@chakra-ui/icons';
 const TrainerCard = ({ image, name, rating, specialisations }) => {
   return (
     <Box 
-      bg={'#f4f4f4'} 
       borderRadius="md" 
       overflow="hidden" 
       boxShadow="md" 
@@ -55,7 +54,7 @@ const Coaches = () => {
     <ChakraProvider>
       <Box 
         mb={10} 
-        bg={'#f4f4f4'} 
+        bg={'white'} 
         fontFamily={'inter'}  
         p={[5, 8, 10]}
         transform={["scale(1)", "scale(0.95)", "scale(0.9)"]}

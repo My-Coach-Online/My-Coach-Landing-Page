@@ -21,7 +21,7 @@ function App() {
           <MoreAbout />
           <WhyChooseUs/>
           <HowItWorks/>
-          <Box bg={'#f4f4f4'}>
+          <Box bg={'white'}>
 
             <Coaches/>
 

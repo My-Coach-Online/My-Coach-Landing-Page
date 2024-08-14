@@ -10,6 +10,7 @@ export const MoreAbout = () => {
       px={[4, 8]}
       justify="center"
       alignItems="center"
+      bg={"#f4f4f4"}
     >
       {/* Pictures
       <Flex

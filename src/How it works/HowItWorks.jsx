@@ -3,7 +3,7 @@ import { Box, Flex, Text, Image, Heading } from '@chakra-ui/react';
 
 export const HowItWorks = () => {
   return (
-    <Box fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box bg={"#f4f4f4"} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
         How It Works
       </Heading>
@@ -22,7 +22,7 @@ export const HowItWorks = () => {
         m={50}
       >
         {/* Step 1 */}
-        <Box bg="white" p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
+        <Box bg={'white'} p={6} borderRadius={20} m={4} width={["100%", "300px"]}>
           <Flex justify={'center'} mb={4}>
             <Image src="searchIcon.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>

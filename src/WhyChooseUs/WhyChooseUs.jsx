@@ -3,7 +3,7 @@ import { ChakraProvider, Box, Flex, Text, Image, Heading } from '@chakra-ui/reac
 
 function WhyChooseUs() {
   return (
-    <Box bg={'#f4f4f4'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box bg={'white'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
         Why Choose Us
       </Heading>
@@ -30,6 +30,7 @@ function WhyChooseUs() {
           p={6}
           borderRadius={20}
           m={1}
+          mb={4}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -48,6 +49,7 @@ function WhyChooseUs() {
           p={6}
           borderRadius={20}
           m={1}
+          mb={4}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -66,6 +68,7 @@ function WhyChooseUs() {
           p={6}
           borderRadius={20}
           m={1}
+          mb={4}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
@@ -84,6 +87,7 @@ function WhyChooseUs() {
           p={6}
           borderRadius={20}
           m={1}
+          mb={4}
           width={["100%", "45%", "300px"]}
         >
           <Flex justify={'center'} mb={4}>
