@@ -6,7 +6,7 @@ export const MoreAbout = () => {
     <Flex
       flexDirection={["column", "column", "row"]}
       pt={[5, 10]}
-      pb={[50, 100]}
+      pb={[50, 150]}
       px={[4, 8]}
       justify="center"
       alignItems="center"
