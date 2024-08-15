@@ -17,14 +17,12 @@ function App() {
 
           <Header/>
           <HeroSection />
-          <Stats/>
+          {/* <Stats/> */}
           <MoreAbout />
           <WhyChooseUs/>
           <HowItWorks/>
           <Box bg={'white'}>
-
             <Coaches/>
-
           </Box>
           {/* <Categories/> */}
           <ContactUs/>
