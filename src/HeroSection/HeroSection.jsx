@@ -94,7 +94,7 @@ export const HeroSection = () => {
                 pos={'relative'}
                 top={[70, 30]}
             >
-                <img src="partners-private-professional-life.png" alt="coaches" style={{ width: "100%" }} />
+                <img src="meghan-holmes-wy_L8W0zcpI-unsplash.jpg" alt="coaches" style={{ width: "100%" }} />
             </Box>
         </Flex>
     );
