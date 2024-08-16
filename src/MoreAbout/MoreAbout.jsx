@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 export const MoreAbout = () => {
@@ -6,62 +6,40 @@ export const MoreAbout = () => {
     <Flex
       flexDirection={["column", "column", "row"]}
       pt={[5, 10]}
-      pb={[50, 150]}
-      px={[4, 8]}
+      pb={[50, 100]}
+      px={[4, 8, 12]}
       justify="center"
       alignItems="center"
       bg={"#f4f4f4"}
     >
-      {/* Pictures
-      <Flex
-        flexDirection={["column", "row"]}
-        alignItems="center"
-        transform={["scale(1)", "scale(0.85)"]}
-        mb={[5, 5, 0]}
-      >
-        <Box pos="relative" top={[-5, -5, -10]}>
-          <Box p={2}>
-            <img
-              src="side-view-kid-practicing-boxing.svg"
-              alt="sparring"
-              style={{ width: "100%", maxWidth: "200px" }}
-            />
-          </Box>
-          <Box p={2} pt={2}>
-            <img
-              src="full-stretch-position-yoga-mat.svg"
-              alt="yoga"
-              style={{ width: "100%", maxWidth: "200px" }}
-            />
-          </Box>
-        </Box>
+      {/* Image Section */}
+      <Box w={["100%", "100%", "40%"]} textAlign={["center","center", "left"]} mb={[5, 5, 0]}>
+        <Image
+          boxSize={["80%", "85%", "100%"]}
+          src="woman-helping-man-gym.jpg"
+          alt="coaching"
+          mx={["auto", "auto", "0"]}
+          borderRadius="md"
+          objectFit="cover"
+        />
+      </Box>
 
-        <Box p={2} pos="relative" top={[-5, -5, -10]}>
-          <img
-            src="couple-training-together-gym.svg"
-            alt="gym"
-            style={{ width: "100%", maxWidth: "200px" }}
-          />
-        </Box>
-      </Flex> */}
-
-      {/* Text */}
+      {/* Text Section */}
       <Box
-        transform={["scale(1)", "scale(1.2)"]}
-        pos="relative"
-        top={[0, 50]}
-        left={[0, 0, 50]}
-        w={["90%", "80%", "451px"]}
+        w={["100%", "100%", "50%"]}
         fontFamily="inter"
         textAlign={["center", "left"]}
       >
-        <Flex w={"fit-content"}  justify={["center", "start"]}>
-          <Heading fontSize={["32px", "36px", "42px"]} w={"-moz-fit-content"} pb={3} color="#2d2d2d">
-            About MyCoach
-          </Heading>
-        </Flex>
+        <Heading
+          fontSize={["32px", "36px", "42px"]}
+          pb={3}
+          color="#2d2d2d"
+          textAlign={["center", "left"]}
+        >
+          About MyCoach
+        </Heading>
 
-        <Text color="gray" pt={5} pb={5} textAlign="left" w={"80%"}>
+        <Text color="gray" pt={5} pb={5} textAlign={["center", "left"]} w={["100%", "100%", "85%"]} mx="auto">
           My Coach is a cutting-edge platform designed to bridge the gap between
           fitness enthusiasts and certified sports coaches. We understand that
           achieving your fitness goals can be challenging without the right
@@ -71,9 +49,8 @@ export const MoreAbout = () => {
         </Text>
 
         <Flex
-          transform={["scale(1)", "scale(0.9)"]}
           pt={5}
-          justify={["center", "start"]}
+          justify={["center", "center", "flex-start"]}
           flexDirection={["column", "row"]}
           alignItems="center"
         >
@@ -82,7 +59,7 @@ export const MoreAbout = () => {
             h={42}
             w={["80%", "180px"]}
             mb={[3, 0]}
-            mr={[0, 2]}
+            mr={[0, 3]}
             bg="#2d2d2d"
             color="white"
             borderRadius={0}

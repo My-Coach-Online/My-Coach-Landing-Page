@@ -53,26 +53,20 @@ const Footer = () => {
             <Stack spacing={2}>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaLinkedin />
-                <Link href="#" ml={2}>
+                <Link href="https://www.linkedin.com/company/mycoach1/" ml={2}>
                   LinkedIn
                 </Link>
               </Flex>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaFacebook />
-                <Link href="#" ml={2}>
+                <Link href="https://www.facebook.com/profile.php" ml={2}>
                   Facebook
                 </Link>
               </Flex>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaInstagram />
-                <Link href="#" ml={2}>
+                <Link href="https://www.instagram.com/mycoachonline/" ml={2}>
                   Instagram
-                </Link>
-              </Flex>
-              <Flex align="center" justify={['center', 'center', 'start']}>
-                <FaGithub />
-                <Link href="#" ml={2}>
-                  Github
                 </Link>
               </Flex>
             </Stack>
