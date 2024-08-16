@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Icon, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+import mm from "../Images/woman-doing-workout-gym-with-trainer.jpg";
 
 export const HeroSection = () => {
     return (
@@ -24,7 +25,7 @@ export const HeroSection = () => {
                 <Image
                     boxSize={["80%", "70%", "90%"]}
                     mx={["auto", "auto", "0"]}
-                    src="woman-doing-workout-gym-with-trainer.jpg"
+                    src={mm}
                     alt="coaches"
                     borderRadius="md"
                     objectFit="cover"
