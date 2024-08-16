@@ -75,7 +75,7 @@ export const HeroSection = () => {
                         Get Started
                     </Button>
 
-                    <Button
+                    {/* <Button
                         fontFamily={'inter'}
                         w={["130px", "140px", "150px"]}
                         borderRadius={0}
@@ -86,7 +86,7 @@ export const HeroSection = () => {
                     >
                         <img style={{ marginRight: 12, width: 28 }} src="play-circle.svg" alt="play" />
                         Play video
-                    </Button>
+                    </Button> */}
                 </Flex>
 
                 <Box
