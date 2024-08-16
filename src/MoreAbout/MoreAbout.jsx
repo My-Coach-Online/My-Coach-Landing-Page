@@ -15,6 +15,7 @@ export const MoreAbout = () => {
       {/* Image Section */}
       <Box w={["100%", "100%", "40%"]} textAlign={["center","center", "left"]} mr={[0,0,10]} mb={[5, 5, 0]}>
         <Image
+          order={[1,2,2]}
           boxSize={["80%", "85%", "100%"]}
           src="woman-helping-man-gym.jpg"
           alt="coaching"
@@ -26,6 +27,7 @@ export const MoreAbout = () => {
 
       {/* Text Section */}
       <Box
+        order={[2,1,1]}
         w={["100%", "100%", "50%"]}
         fontFamily="inter"
         textAlign={["center", "left"]}
