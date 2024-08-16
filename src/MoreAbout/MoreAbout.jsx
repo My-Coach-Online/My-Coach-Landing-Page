@@ -13,7 +13,7 @@ export const MoreAbout = () => {
       bg={"#f4f4f4"}
     >
       {/* Image Section */}
-      <Box w={["100%", "100%", "40%"]} textAlign={["center","center", "left"]} mb={[5, 5, 0]}>
+      <Box w={["100%", "100%", "40%"]} textAlign={["center","center", "left"]} mr={[0,0,10]} mb={[5, 5, 0]}>
         <Image
           boxSize={["80%", "85%", "100%"]}
           src="woman-helping-man-gym.jpg"
