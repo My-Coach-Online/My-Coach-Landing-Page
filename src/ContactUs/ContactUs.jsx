@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaInstagram, FaLinkedin
 const ContactUs = () => {
   return (
     <ChakraProvider>
-      <Box mt={20} fontFamily={'inter'} mb={10} bg="white" textAlign={'center'}>
+      <Box mt={20} fontFamily={'inter'} mb={4} bg="white" textAlign={'center'}>
         <Heading>
           Contact Us
         </Heading>

@@ -21,7 +21,7 @@ export const HeroSection = () => {
                 w={["100%", "90%", "50%"]}
                 textAlign={["center", "center", "right"]}
                 mb={[5, 5, 0]}
-                order={[1, 1, 2]}
+                order={[1, 1, 1]}
             >
                 <Image
                     boxSize={["80%", "70%", "90%"]}
@@ -39,7 +39,7 @@ export const HeroSection = () => {
                 w={["100%", "80%", "50%"]}
                 pos={'relative'}
                 textAlign={["center", "center", "left"]}
-                order={[2, 2, 1]}            >
+                order={[2, 2, 2]}            >
                 <Heading
                     fontWeight={'bold'}
                     fontFamily={'inter'}
