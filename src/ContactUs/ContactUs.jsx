@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, Box, Flex, Heading, FormControl, FormLabel, Input, Textarea, Button, Stack, Text, Icon, Divider } from '@chakra-ui/react';
+import { ChakraProvider, Box, Flex, Heading, FormControl, FormLabel, Input, Textarea, Button, Stack, Text, Icon, Divider, Select } from '@chakra-ui/react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const ContactUs = () => {
@@ -7,7 +7,7 @@ const ContactUs = () => {
     <ChakraProvider>
       <Box mt={20} fontFamily={'inter'} mb={4} bg="white" textAlign={'center'}>
         <Heading>
-          Contact Us
+            Formulaire de Contact
         </Heading>
         <Text mt={2}>
           Any questions or remarks? Just write us a message!
@@ -61,25 +61,44 @@ const ContactUs = () => {
             <Stack spacing={4}>
               <Flex flexDirection={["column", "column", "row"]}>
                 <FormControl id="first-name" mr={[0, 0, 2]} mb={[4, 4, 0]} isRequired>
-                  <FormLabel>First Name</FormLabel>
-                  <Input placeholder="First Name" />
-                </FormControl>
-                <FormControl id="last-name" ml={[0, 0, 2]} isRequired>
-                  <FormLabel>Last Name</FormLabel>
-                  <Input placeholder="Last Name" />
+                  <FormLabel>Nom Complet</FormLabel>
+                  <Input placeholder="Nom Complet" />
                 </FormControl>
               </Flex>
+
               <Flex flexDirection={["column", "column", "row"]}>
                 <FormControl id="email" mr={[0, 0, 2]} mb={[4, 4, 0]} isRequired>
                   <FormLabel>Email</FormLabel>
                   <Input type="email" placeholder="Email" />
                 </FormControl>
-                <FormControl id="phone" ml={[0, 0, 2]}>
-                  <FormLabel>Phone Number</FormLabel>
-                  <Input placeholder="Phone Number" />
+
+                <FormControl id="phone" mr={[0, 0, 2]} mb={[4, 4, 0]}>
+                  <FormLabel>Numéro de Téléphone</FormLabel>
+                  <Input placeholder="Numéro de Téléphone" />
                 </FormControl>
+
               </Flex>
-              <FormControl id="message" isRequired>
+
+              <Flex>
+                  <FormControl id="Ville" >
+                    <FormLabel>Ville</FormLabel>
+                    <Input placeholder="Ville" />
+                  </FormControl>
+                  
+                <FormControl  id="objectif" ml={2} >
+                    <FormLabel>Objectif Fitness</FormLabel>
+                      <Select>
+                        <option value="Choisisez une option" disabled selected >Choisisez une option</option>
+                        <option value="Perte de Poids">Perte de Poids</option>
+                        <option value="Prise de Muscle">Prise de Muscle</option>
+                        <option value="Fitness Général">Fitness Général</option>
+                      </Select>
+                  </FormControl>
+
+              </Flex>
+
+
+              <FormControl id="message">
                 <FormLabel>Message</FormLabel>
                 <Textarea placeholder="Write your message..." />
               </FormControl>
