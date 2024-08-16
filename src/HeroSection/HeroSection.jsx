@@ -9,19 +9,17 @@ export const HeroSection = () => {
             mx="auto"
             mb={[10, 10, 0]}
             bg={'white'}
-            flexDirection={["column-reverse", "column-reverse", "row"]}
+            flexDirection={["column", "column-reverse", "row"]}
             alignItems="center"
             justifyContent="space-between"
             p={[4, 6, 8]}
             pb={21}
         >
-
             {/* Image Section */}
             <Box
                 w={["100%", "90%", "50%"]}
                 textAlign={["center", "center", "right"]}
                 mb={[5, 5, 0]}
-                order={[1, 1, 1]}
             >
                 <Image
                     boxSize={["80%", "70%", "90%"]}
@@ -39,7 +37,7 @@ export const HeroSection = () => {
                 w={["100%", "80%", "50%"]}
                 pos={'relative'}
                 textAlign={["center", "center", "left"]}
-                order={[2, 2, 2]}            >
+            >
                 <Heading
                     fontWeight={'bold'}
                     fontFamily={'inter'}
@@ -101,7 +99,6 @@ export const HeroSection = () => {
                     <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
                 </Box>
             </Box>
-
         </Flex>
     );
 };
