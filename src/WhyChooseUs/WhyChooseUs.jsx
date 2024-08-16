@@ -5,7 +5,8 @@ function WhyChooseUs() {
   return (
     <Box bg={'white'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
-        Why Choose Us
+      Pourquoi Nous Choisir
+
       </Heading>
 
       <Flex justifyContent="center">
@@ -15,7 +16,8 @@ function WhyChooseUs() {
           color="gray.600"
           mb={8}
         >
-          Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals.
+          Choisir My Coach, c'est opter pour la flexibilité, la commodité et un accompagnement personnalisé. Que vous soyez débutant en fitness ou athlète chevronné, notre plateforme vous fournit les outils et le soutien nécessaires pour atteindre vos objectifs.
+
         </Text>
       </Flex>
 
@@ -37,10 +39,10 @@ function WhyChooseUs() {
             <Image src="healthIcon.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Convenience
+             Commodité
           </Heading>
           <Text color="gray.600">
-            Access a variety of certified coaches from your home.
+              Accédez à une variété de coachs certifiés depuis chez vous.
           </Text>
         </Box>
 
@@ -56,10 +58,10 @@ function WhyChooseUs() {
             <Image src="YogaIcon.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Personalization
+              Personnalisation 
           </Heading>
           <Text color="gray.600">
-            Get tailored workout plans and progress tracking.
+              Obtenez des plans d'entraînement personnalisés et un suivi des progrès.
           </Text>
         </Box>
 
@@ -75,10 +77,10 @@ function WhyChooseUs() {
             <Image src="flexibility.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Flexibility
+              Flexibilité 
           </Heading>
           <Text color="gray.600">
-            Book sessions at times and locations that suit you.
+              Réservez des séances aux moments et aux lieux qui vous conviennent.
           </Text>
         </Box>
 
@@ -94,10 +96,10 @@ function WhyChooseUs() {
             <Image src="handshake.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Motivation
+              Motivation 
           </Heading>
           <Text color="gray.600">
-            Stay motivated with regular check-ins from your coach.
+              Restez motivé avec des suivis réguliers de votre coach.
           </Text>
         </Box>
       </Flex>

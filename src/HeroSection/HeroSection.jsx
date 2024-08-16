@@ -45,7 +45,8 @@ export const HeroSection = () => {
                     color={'#2d2d2d'}
                     fontSize={["xl", "2xl", "3xl", "4xl"]}
                 >
-                    FIND YOUR PERFECT PERSONAL COACH, ANYTIME, ANYWHERE
+                    Trouvez Votre Coach Parfait, À Tout Moment, Partout.    
+
                 </Heading>
 
                 <Text
@@ -56,7 +57,7 @@ export const HeroSection = () => {
                     color={'gray.600'}
                     fontWeight={'regular'}
                 >
-                    Connecting you with certified coaches and personal trainers for tailored fitness journeys.
+                    Imaginez atteindre vos objectifs de fitness avec l'accompagnement de coachs de classe mondiale, le tout depuis le confort de votre propre emploi du temps et lieu. Découvrez My Coach, votre plateforme personnelle vers un coaching de fitness expert, conçue rien que pour vous.
                 </Text>
 
                 <Flex

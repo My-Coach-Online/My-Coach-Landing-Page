@@ -5,12 +5,13 @@ export const HowItWorks = () => {
   return (
     <Box bg={"#f4f4f4"} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
-        How It Works
+          Comment Ça Marche
       </Heading>
 
       <Flex justifyContent="center">
         <Text w={["90%", "80%", "70%"]} fontSize={["md", "lg"]} color="gray.600" mb={8}>
-          Choosing My Coach means choosing flexibility, convenience, and personalized care. Whether you are a fitness beginner or a seasoned athlete, our platform provides the tools and support you need to reach your goals.
+        À Propos de Nous
+
         </Text>
       </Flex>
 
@@ -27,12 +28,11 @@ export const HowItWorks = () => {
             <Image src="searchIcon.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Choose a Coach
+              Choisissez un Coach
           </Heading>
           <Text color="gray.600">
-            Browse and select a certified coach.        
-                 <br/> <br />
-          </Text>
+              Parcourez et sélectionnez un coach qui correspond à vos aspirations.
+                 </Text>
         </Box>
 
         {/* Step 2 */}
@@ -41,10 +41,10 @@ export const HowItWorks = () => {
             <Image src="Calendar.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Book a Session
+              Réservez une séance 
           </Heading>
           <Text color="gray.600">
-            Book sessions at times and locations that suit you.
+              Planifiez votre séance d'entraînement à l'heure et à l'endroit souhaités.
           </Text>
         </Box>
 
@@ -54,10 +54,10 @@ export const HowItWorks = () => {
             <Image src="success.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
           <Heading as="h3" size="md" mb={2}>
-            Achieve Your Goals
+             Atteignez vos objectifs
           </Heading>
           <Text color="gray.600">
-            Follow your personalized plan and get feedback.
+              Suivez votre plan personnalisé et recevez des retours.
           </Text>
         </Box>
       </Flex>
