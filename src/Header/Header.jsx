@@ -26,11 +26,11 @@ export const Header = () => {
           fontWeight={500}
           display={["none", "none", "flex"]}  // Hidden on small screens
         >
-          <Link>Home</Link>
-          <Link>About</Link>
-          <Link>Trainers</Link>
-          <Link>Categories</Link>
-          <Link>Review</Link>
+          <Link>Accueil</Link>
+          <Link>À Propos</Link>
+          <Link>Pourquoi Nous Choisir</Link>
+          <Link>Comment Ça Marche</Link>
+          <Link>Contact</Link>
         </Flex>
 
         {/* Hamburger Menu Button - Visible on small screens */}
@@ -48,11 +48,11 @@ export const Header = () => {
             <DrawerCloseButton />
             <DrawerBody>
               <Stack spacing={4} mt={10}>
-                <Link onClick={toggleDrawer}>Home</Link>
-                <Link onClick={toggleDrawer}>About</Link>
-                <Link onClick={toggleDrawer}>Trainers</Link>
-                <Link onClick={toggleDrawer}>Categories</Link>
-                <Link onClick={toggleDrawer}>Review</Link>
+                <Link onClick={toggleDrawer}>Accueil</Link>
+                <Link onClick={toggleDrawer}>À Propos</Link>
+                <Link onClick={toggleDrawer}>Pourquoi Nous Choisir</Link>
+                <Link onClick={toggleDrawer}>Comment Ça Marche</Link>
+                <Link onClick={toggleDrawer}>Contact</Link>
               </Stack>
             </DrawerBody>
           </DrawerContent>
