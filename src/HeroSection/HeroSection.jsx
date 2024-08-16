@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Icon, Text, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Icon, Text, Image, Link } from "@chakra-ui/react";
 import React from "react";
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import mm from "../Images/woman-doing-workout-gym-with-trainer.jpg";
@@ -10,7 +10,7 @@ export const HeroSection = () => {
             mx="auto"
             mb={[10, 10, 0]}
             bg={'white'}
-            flexDirection={["column", "column-reverse", "row"]}
+            flexDirection={["column", "column", "row"]}
             alignItems="center"
             justifyContent="space-between"
             p={[4, 6, 8]}
@@ -94,10 +94,18 @@ export const HeroSection = () => {
                     justifyContent={["center", "center", "flex-start"]}
                     alignItems="center"
                     mt={6}
-                >
-                    <Icon as={FaLinkedin} w={6} h={6} color="#2d2d2d" mx={2} />
-                    <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" mx={2} />
-                    <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
+                >   
+                    <Link to="/https://www.linkedin.com/company/mycoach1/" >
+                        <Icon as={FaLinkedin} w={6} h={6} color="#2d2d2d" mx={2} />                    
+                    </Link>
+
+                    <Link to="/https://www.facebook.com/profile.php" >
+                        <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" mx={2} />
+                    </Link>
+
+                    <Link to="/https://www.instagram.com/mycoachonline/" >
+                        <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
+                    </Link>
                 </Box>
             </Box>
         </Flex>

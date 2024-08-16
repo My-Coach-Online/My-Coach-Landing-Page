@@ -4,7 +4,7 @@ import React from "react";
 export const MoreAbout = () => {
   return (
     <Flex
-      flexDirection={["column", "column", "row"]}
+      flexDirection={["column", "column", "row-reverse"]}
       pt={[5, 10]}
       pb={[50, 100]}
       px={[4, 8, 12]}
@@ -41,7 +41,7 @@ export const MoreAbout = () => {
           About MyCoach
         </Heading>
 
-        <Text color="gray" pt={5} pb={5} textAlign={["center", "left"]} w={["100%", "100%", "85%"]} mx="auto">
+        <Text color="gray" pt={5} pb={5} textAlign={["center", "left"]} w={["100%", "100%", "85%"]} >
           My Coach is a cutting-edge platform designed to bridge the gap between
           fitness enthusiasts and certified sports coaches. We understand that
           achieving your fitness goals can be challenging without the right
