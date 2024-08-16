@@ -13,7 +13,7 @@ const ContactUs = () => {
           Any questions or remarks? Just write us a message!
         </Text>
       </Box>
-      <Flex justify="center" align="center" bg="white" p={[4, 8]} minHeight="100vh">
+      <Flex justify="center" align="center" bg="white" p={[4, 6]} minHeight="100vh">
         <Flex
           width={["100%", "90%", "80%"]}
           bg="gray.50"
