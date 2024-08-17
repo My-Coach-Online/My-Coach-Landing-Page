@@ -13,28 +13,28 @@ const ContactUs = () => {
           Any questions or remarks? Just write us a message!
         </Text>
       </Box>
-      <Flex justify="center" align="center" bg="white" p={[4, 6]} minHeight="100vh">
+      <Flex mb={5} justify="center" align="center" bg="white" p={[4, 6]} minHeight="100vh">
         <Flex
-          width={["100%", "90%", "80%"]}
+          width={["100%", "100%", "70%", "80%"]}
           bg="gray.50"
           borderRadius="md"
           boxShadow="md"
           overflow="hidden"
-          flexDirection={["column", "column", "row"]}
+          flexDirection={["column", "column", "column", "row"]}
         >
           {/* Contact Information Sidebar */}
           <Box
             bg="#1E6BD3"
             color="white"
             p={10}
-            width={["100%", "100%", "35%"]}
-            textAlign={["center", "center", "left"]}
+            width={["100%", "100%","100%", "35%"]}
+            textAlign={["center", "center", "center", "left"]}
           >
             <Heading as="h3" size="lg" mb={4}>
               Contact Information
             </Heading>
             <Text mb={4}>Lorem ipsum dolor sit amet consectetur</Text>
-            <Stack mt={5} spacing={4} align={["center", "center", "flex-start"]}>
+            <Stack mt={5} spacing={4} align={["center", "center","center", "flex-start"]}>
               <Flex align="center">
                 <Icon as={FaPhone} boxSize={5} mr={3} />
                 <Text>+212 655555555</Text>
@@ -57,35 +57,36 @@ const ContactUs = () => {
           </Box>
 
           {/* Contact Form */}
-          <Box p={10} width={["100%", "100%", "65%"]}>
-            <Stack spacing={4}>
-              <Flex flexDirection={["column", "column", "row"]}>
-                <FormControl id="first-name" mr={[0, 0, 2]} mb={[4, 4, 0]} isRequired>
+          <Box p={10} width={["100%", "100%", "100%", "65%"]}>
+            <Stack spacing={6}>
+              <Flex w={["auto", "auto", "100%", "auto"]} flexDirection={["column", "column", "row"]}>
+                <FormControl id="first-name" isRequired>
                   <FormLabel>Nom Complet</FormLabel>
                   <Input placeholder="Nom Complet" />
-                </FormControl>
+                </FormControl>  
               </Flex>
 
-              <Flex flexDirection={["column", "column", "row"]}>
-                <FormControl id="email" mr={[0, 0, 2]} mb={[4, 4, 0]} isRequired>
+              <Flex flexDirection={["column", "column", "column","row"]}>
+                <FormControl  id="email" mr={[0, 0, 2]} isRequired>
                   <FormLabel>Email</FormLabel>
                   <Input type="email" placeholder="Email" />
                 </FormControl>
 
-                <FormControl id="phone" mr={[0, 0, 2]} mb={[4, 4, 0]}>
+
+                <FormControl id="phone">
                   <FormLabel>Numéro de Téléphone</FormLabel>
                   <Input placeholder="Numéro de Téléphone" />
                 </FormControl>
 
               </Flex>
 
-              <Flex>
-                  <FormControl id="Ville" >
+              <Flex flexDirection={["column", "column", "row"]} >
+                  <FormControl id="Ville">
                     <FormLabel>Ville</FormLabel>
                     <Input placeholder="Ville" />
                   </FormControl>
                   
-                <FormControl  id="objectif" ml={2} >
+                <FormControl  id="objectif" ml={[0, 0,2,2]} >
                     <FormLabel>Objectif Fitness</FormLabel>
                       <Select>
                         <option value="Choisisez une option" disabled selected >Choisisez une option</option>
