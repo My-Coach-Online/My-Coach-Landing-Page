@@ -67,7 +67,7 @@ const ContactUs = () => {
               </Flex>
 
               <Flex flexDirection={["column", "column", "column","row"]}>
-                <FormControl mb={[0,7,79,0]}  id="email" mr={[0, 0, 2]} isRequired>
+                <FormControl mb={[0,7,7,0]}  id="email" mr={[0, 0, 2]} isRequired>
                   <FormLabel>Email</FormLabel>
                   <Input type="email" placeholder="Email" />
                 </FormControl>
