@@ -9,10 +9,10 @@ export const HowItWorks = () => {
       </Heading>
 
       <Flex justifyContent="center">
-        <Text w={["90%", "80%", "70%"]} fontSize={["md", "lg"]} color="gray.600" mb={8}>
+        {/* <Text w={["90%", "80%", "70%"]} fontSize={["md", "lg"]} color="gray.600" mb={8}>
         À Propos de Nous
 
-        </Text>
+        </Text> */}
       </Flex>
 
       <Flex

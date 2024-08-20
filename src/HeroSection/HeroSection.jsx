@@ -68,7 +68,7 @@ export const HeroSection = () => {
                     <Button
                         _hover={{ bg: "gray.600" }}
                         h={12}
-                        w={["130px", "140px", "150px"]}
+                        w={"-moz-fit-content"}
                         mr={3}
                         bg={'#2d2d2d'}
                         color={'white'}
