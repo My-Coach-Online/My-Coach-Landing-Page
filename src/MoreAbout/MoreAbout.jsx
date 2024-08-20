@@ -36,12 +36,12 @@ export const MoreAbout = () => {
           fontSize={["32px", "36px", "42px"]}
           pb={3}
           color="#2d2d2d"
-          textAlign={["center", "left"]}
+          textAlign={["center","center" ,"left"]}
         >
           À Propos de Nous
         </Heading>
 
-        <Text  fontFamily={'inter'} color="gray" pt={5} pb={5} textAlign={["center", "center",  "left"]} w={["100%", "100%", "85%"]} >
+        <Text  fontFamily={'inter'} color="gray" pt={5} pb={5} textAlign={["center", "center", "center", "left"]} w={["100%", "100%", "85%"]} >
         My Coach est une plateforme innovante conçue pour combler le fossé entre les passionnés de fitness et les coachs sportifs certifiés. Nous comprenons qu'atteindre vos objectifs de fitness peut être un défi sans les conseils et le soutien appropriés. C'est pourquoi nous avons créé un espace convivial où vous pouvez facilement vous connecter avec des entraîneurs professionnels qui adaptent leur expertise à vos besoins et à votre emploi du temps unique.
 
         </Text>
