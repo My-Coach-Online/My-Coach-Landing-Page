@@ -15,6 +15,7 @@ export const HeroSection = () => {
             justifyContent="space-between"
             p={[4, 6, 8]}
             pb={21}
+            fontFamily={'inter'}
         >
             {/* Image Section */}
             <Box

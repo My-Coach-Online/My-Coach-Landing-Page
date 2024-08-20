@@ -15,6 +15,7 @@ function WhyChooseUs() {
           fontSize={["md", "lg"]}
           color="gray.600"
           mb={8}
+          fontFamily={'inter'}
         >
           Choisir My Coach, c'est opter pour la flexibilité, la commodité et un accompagnement personnalisé. Que vous soyez débutant en fitness ou athlète chevronné, notre plateforme vous fournit les outils et le soutien nécessaires pour atteindre vos objectifs.
 

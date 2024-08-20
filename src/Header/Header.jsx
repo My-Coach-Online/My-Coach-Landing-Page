@@ -10,7 +10,8 @@ export const Header = () => {
   };
 
   return (
-    <Box bg={'white'} p={7} boxShadow="md">
+    <Box bg={'white'} p={7} boxShadow="md" fontFamily={'inter'}
+>
       <Flex justify={'space-between'} alignItems="center">
         {/* Logo */}
         <Box>
