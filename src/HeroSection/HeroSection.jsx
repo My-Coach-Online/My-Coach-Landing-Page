@@ -74,7 +74,7 @@ export const HeroSection = () => {
                         color={'white'}
                         borderRadius={0}
                     >
-                        Get Started
+                        Accès Avant Premier
                     </Button>
 
                     {/* <Button

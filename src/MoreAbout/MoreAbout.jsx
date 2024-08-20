@@ -52,18 +52,6 @@ export const MoreAbout = () => {
           flexDirection={["column", "row"]}
           alignItems="center"
         >
-          <Button
-            _hover={{ bg: "gray.400", color: "gray.800" }}
-            h={42}
-            w={["80%", "180px"]}
-            mb={[3, 0]}
-            mr={[0, 3]}
-            bg="#2d2d2d"
-            color="white"
-            borderRadius={0}
-          >
-            Browse Trainers
-          </Button>
 
           <Button
             fontFamily="inter"
@@ -74,8 +62,10 @@ export const MoreAbout = () => {
             border="1px solid"
             color="black"
             fontWeight="bold"
+            alignSelf={'center'}
+            
           >
-            How it works
+            Rejoignez Nous!
           </Button>
         </Flex>
       </Box>

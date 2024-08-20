@@ -67,7 +67,7 @@ export const Header = () => {
           as={'a'}
           display={["none", "none", "inline-flex"]}  // Hidden on small screens
         >
-          Join Now
+          Rejoignez Nous!
         </Button>
       </Flex>
     </Box>
