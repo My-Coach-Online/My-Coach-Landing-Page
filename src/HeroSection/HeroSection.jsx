@@ -56,7 +56,7 @@ export const HeroSection = () => {
                     w={["100%", "100%", "85%"]}
                     mx={["auto", "auto", "0"]}
                     color={'gray.600'}
-                    fontWeight={'regular'}
+                    fontWeight={'inter'}
                 >
                     Imaginez atteindre vos objectifs de fitness avec l'accompagnement de coachs de classe mondiale, le tout depuis le confort de votre propre emploi du temps et lieu. Découvrez My Coach, votre plateforme personnelle vers un coaching de fitness expert, conçue rien que pour vous.
                 </Text>
