@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-Coach-Landing-Page/static/css/main.08339ba3.css",
-    "main.js": "/My-Coach-Landing-Page/static/js/main.70630a98.js",
+    "main.js": "/My-Coach-Landing-Page/static/js/main.8537abca.js",
     "static/media/woman-doing-workout-gym-with-trainer.jpg": "/My-Coach-Landing-Page/static/media/woman-doing-workout-gym-with-trainer.de7abfebb46dbf3af1c8.jpg",
     "static/media/slick.svg": "/My-Coach-Landing-Page/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/My-Coach-Landing-Page/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/My-Coach-Landing-Page/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/My-Coach-Landing-Page/index.html",
     "main.08339ba3.css.map": "/My-Coach-Landing-Page/static/css/main.08339ba3.css.map",
-    "main.70630a98.js.map": "/My-Coach-Landing-Page/static/js/main.70630a98.js.map"
+    "main.8537abca.js.map": "/My-Coach-Landing-Page/static/js/main.8537abca.js.map"
   },
   "entrypoints": [
     "static/css/main.08339ba3.css",
-    "static/js/main.70630a98.js"
+    "static/js/main.8537abca.js"
   ]
 }
