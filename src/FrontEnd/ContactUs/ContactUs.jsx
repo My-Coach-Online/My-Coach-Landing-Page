@@ -23,7 +23,7 @@ const ContactUs = () => {
 
     try {
       // Send form data to the backend API
-      await axios.post('https://your-backend-url.com/api/contact', formData);
+      await axios.post('https:///api/contact', formData);
       alert("Message sent successfully!");
     } catch (error) {
       console.error("Error submitting form", error);
