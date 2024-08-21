@@ -1,14 +1,14 @@
 import { Box } from "@chakra-ui/react";
-import { Header } from "./Header/Header";
-import { HeroSection } from "./HeroSection/HeroSection";
-import Stats from "./Stats/Stats";
-import { MoreAbout } from "./MoreAbout/MoreAbout";
-import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
-import Categories from "./Categories/Categories";
-import Coaches from "./Choaches/Choaches";
-import Footer from "./Footer/Footer";
-import ContactUs from "./ContactUs/ContactUs";
-import { HowItWorks } from "./How it works/HowItWorks";
+import { Header } from "./FrontEnd/Header/Header";
+import { HeroSection } from "./FrontEnd/HeroSection/HeroSection";
+import Stats from "./FrontEnd/Stats/Stats";
+import { MoreAbout } from "./FrontEnd/MoreAbout/MoreAbout";
+import WhyChooseUs from "./FrontEnd/WhyChooseUs/WhyChooseUs";
+import Categories from "./FrontEnd/Categories/Categories";
+import Coaches from "./FrontEnd/Choaches/Choaches";
+import Footer from "./FrontEnd/Footer/Footer";
+import ContactUs from "./FrontEnd/ContactUs/ContactUs";
+import { HowItWorks } from "./FrontEnd/How it works/HowItWorks";
 
 function App() {
   return (

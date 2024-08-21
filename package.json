@@ -12,6 +12,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.16.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
     "firebase": "^10.13.0",
     "firebase-tools": "^13.15.2",
     "framer-motion": "^11.2.11",
@@ -53,5 +55,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+  "description": "My-Coach-Landing-Page",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
