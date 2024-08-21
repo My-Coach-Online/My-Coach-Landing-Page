@@ -10,7 +10,6 @@ const ContactUs = () => {
     phone: '',
     city: '',
     fitnessGoal: '',
-    message: ''
   });
 
   const handleChange = (e) => {
@@ -23,7 +22,7 @@ const ContactUs = () => {
 
     try {
       // Send form data to the backend API
-      await axios.post('https:///api/contact', formData);
+      await axios.post('http://localhost:5000/api/contact', formData);
       alert("Message sent successfully!");
     } catch (error) {
       console.error("Error submitting form", error);
@@ -87,14 +86,14 @@ const ContactUs = () => {
           {/* Contact Form */}
           <Box p={10} width={["100%", "100%", "100%", "65%"]}>
             <form onSubmit={handleSubmit}>
-              <Stack spacing={6}>
+              <Stack spacing={7}>
                 <FormControl id="fullName" isRequired>
                   <FormLabel>Nom Complet</FormLabel>
                   <Input id="fullName" value={formData.fullName} onChange={handleChange} placeholder="Nom Complet" />
                 </FormControl>
 
                 <Flex flexDirection={["column", "column", "row"]}>
-                  <FormControl id="email" isRequired>
+                  <FormControl mb={[7,7,0]} id="email" isRequired>
                     <FormLabel>Email</FormLabel>
                     <Input id="email" type="email" value={formData.email} onChange={handleChange} placeholder="Email" />
                   </FormControl>
@@ -106,7 +105,7 @@ const ContactUs = () => {
                 </Flex>
 
                 <Flex flexDirection={["column", "column", "row"]}>
-                  <FormControl id="city">
+                  <FormControl mb={[7,7,0]} id="city">
                     <FormLabel>Ville</FormLabel>
                     <Input id="city" value={formData.city} onChange={handleChange} placeholder="Ville" />
                   </FormControl>
@@ -121,11 +120,6 @@ const ContactUs = () => {
                     </Select>
                   </FormControl>
                 </Flex>
-
-                <FormControl id="message">
-                  <FormLabel>Message</FormLabel>
-                  <Textarea id="message" value={formData.message} onChange={handleChange} placeholder="Write your message..." />
-                </FormControl>
                 
                 <Button
                   type="submit"
