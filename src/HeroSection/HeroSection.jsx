@@ -15,7 +15,7 @@ export const HeroSection = () => {
             justifyContent="space-between"
             p={[4, 6, 8]}
             pb={21}
-            fontFamily={'inter'}
+            fontFamily={'sans-serif'}
         >
             {/* Image Section */}
             <Box
@@ -39,10 +39,11 @@ export const HeroSection = () => {
                 w={["100%", "80%", "50%"]}
                 pos={'relative'}
                 textAlign={["center", "center", "left"]}
+                fontFamily={'sans-serif'}
             >
                 <Heading
                     fontWeight={'bold'}
-                    fontFamily={'inter'}
+                    fontFamily={'sans-serif'}
                     color={'#2d2d2d'}
                     fontSize={["xl", "2xl", "3xl", "4xl"]}
                 >
@@ -56,7 +57,7 @@ export const HeroSection = () => {
                     w={["100%", "100%", "85%"]}
                     mx={["auto", "auto", "0"]}
                     color={'gray.600'}
-                    fontWeight={'inter'}
+                    fontFamily={'sans-serif'}
                 >
                     Imaginez atteindre vos objectifs de fitness avec l'accompagnement de coachs de classe mondiale, le tout depuis le confort de votre propre emploi du temps et lieu. Découvrez My Coach, votre plateforme personnelle vers un coaching de fitness expert, conçue rien que pour vous.
                 </Text>
@@ -78,7 +79,7 @@ export const HeroSection = () => {
                     </Button>
 
                     {/* <Button
-                        fontFamily={'inter'}
+                        fontFamily={'sans-serif'}
                         w={["130px", "140px", "150px"]}
                         borderRadius={0}
                         bg={'transparent'}

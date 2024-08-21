@@ -55,12 +55,12 @@ const Coaches = () => {
       <Box 
         mb={10} 
         bg={'white'} 
-        fontFamily={'inter'}  
+        fontFamily={'sans-serif'}  
         p={[5, 8, 10]}
         transform={["scale(1)", "scale(0.95)", "scale(0.9)"]}
       >
         <Box pb={10} textAlign={'center'}>
-          <Heading fontFamily={'inter'} fontSize={["2xl", "3xl", "4xl"]}>
+          <Heading fontFamily={'sans-serif'} fontSize={["2xl", "3xl", "4xl"]}>
             Meet Our Coaches
           </Heading>
         </Box>

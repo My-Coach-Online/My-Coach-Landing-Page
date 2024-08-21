@@ -3,7 +3,7 @@ import { ChakraProvider, Box, Flex, Text, Image, Heading } from '@chakra-ui/reac
 
 function WhyChooseUs() {
   return (
-    <Box bg={'white'} fontFamily={'inter'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box bg={'white'} fontFamily={'sans-serif'} mt={10} p={[5, 10, 20]} textAlign="center">
       <Heading as="h2" size="xl" mb={4}>
       Pourquoi Nous Choisir
 
@@ -15,7 +15,7 @@ function WhyChooseUs() {
           fontSize={["md", "lg"]}
           color="gray.600"
           mb={8}
-          fontFamily={'inter'}
+          fontFamily={'sans-serif'}
         >
           Choisir My Coach, c'est opter pour la flexibilité, la commodité et un accompagnement personnalisé. Que vous soyez débutant en fitness ou athlète chevronné, notre plateforme vous fournit les outils et le soutien nécessaires pour atteindre vos objectifs.
 

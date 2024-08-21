@@ -10,7 +10,7 @@ export const Header = () => {
   };
 
   return (
-    <Box bg={'white'} p={7} boxShadow="md" fontFamily={'inter'}
+    <Box bg={'white'} p={7} boxShadow="md" fontFamily={'sans-serif'}
 >
       <Flex justify={'space-between'} alignItems="center">
         {/* Logo */}
@@ -23,15 +23,15 @@ export const Header = () => {
           w={600}
           justify={'space-around'}
           color={'gray.600'}
-          fontFamily={'inter'}
+          fontFamily={'sans-serif'}
           fontWeight={500}
           display={["none", "none", "flex"]}  // Hidden on small screens
         >
-          <Link>Accueil</Link>
-          <Link>À Propos</Link>
-          <Link>Pourquoi Nous Choisir</Link>
-          <Link>Comment Ça Marche</Link>
-          <Link>Contact</Link>
+          <a href="#Home">Accueil</a>
+          <a href="#About">À Propos</a>
+          <a href="#WhyChooseUs">Pourquoi Nous Choisir</a>
+          <a href="#HowItWorks" >Comment Ça Marche</a>
+          <a href="#Contact">Contact</a>
         </Flex>
 
         {/* Hamburger Menu Button - Visible on small screens */}
@@ -49,11 +49,11 @@ export const Header = () => {
             <DrawerCloseButton />
             <DrawerBody>
               <Stack spacing={4} mt={10}>
-                <Link onClick={toggleDrawer}>Accueil</Link>
-                <Link onClick={toggleDrawer}>À Propos</Link>
-                <Link onClick={toggleDrawer}>Pourquoi Nous Choisir</Link>
-                <Link onClick={toggleDrawer}>Comment Ça Marche</Link>
-                <Link onClick={toggleDrawer}>Contact</Link>
+                <a onClick={toggleDrawer}>Accueil</a>
+                <a onClick={toggleDrawer}>À Propos</a>
+                <a onClick={toggleDrawer}>Pourquoi Nous Choisir</a>
+                <a to="#HowItWorks" onClick={toggleDrawer}>Comment Ça Marche</a>
+                <a onClick={toggleDrawer}>Contact</a>
               </Stack>
             </DrawerBody>
           </DrawerContent>
