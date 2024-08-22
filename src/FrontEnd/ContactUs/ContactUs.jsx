@@ -32,7 +32,7 @@ const ContactUs = () => {
 
   return (
     <ChakraProvider>
-      <Box mt={20} fontFamily={'sans-serif'} mb={4} bg="white" textAlign={'center'}>
+      <Box mt={10} fontFamily={'sans-serif'} mb={4} bg="white" textAlign={'center'}>
         <Heading>
           Formulaire de Contact
         </Heading>
@@ -40,7 +40,7 @@ const ContactUs = () => {
           Any questions or remarks? Just write us a message!
         </Text>
       </Box>
-      <Flex mb={5} justify="center" align="center" bg="white" p={[4, 6]} minHeight="100vh">
+      <Flex mb={5} justify="center" align="center" bg="white" p={[4, 6]} >
         <Flex
           width={["100%", "100%", "70%", "80%"]}
           bg="gray.50"

@@ -1,5 +1,5 @@
-import React from 'react';
-import { ChakraProvider, Box, Flex, Text, Image, Heading, Button, Stack } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { ChakraProvider,Badge, Box, Flex, Heading, Button, Text, Image, useDisclosure } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 
 const TrainerCard = ({ image, name, rating, specialisations }) => {
@@ -8,9 +8,10 @@ const TrainerCard = ({ image, name, rating, specialisations }) => {
       borderRadius="md" 
       overflow="hidden" 
       boxShadow="md" 
-      maxW={["100%", "45%", "sm"]} 
+      maxW={["80%", "45%", "sm"]} 
       m={4}
-      width={["100%", "45%", "sm"]}  // Adjust width for different screen sizes
+      width={["80%", "45%", "sm"]}
+      
     >
       <Image src={image} alt={name} objectFit="cover" w="100%" h={["200px", "250px", "300px"]} />
       <Box p={4} bg="gray.800" color="white">
@@ -29,6 +30,8 @@ const TrainerCard = ({ image, name, rating, specialisations }) => {
 };
 
 const Coaches = () => {
+  const [isCardVisible, setIsCardVisible] = useState(false);
+
   const trainers = [
     {
       image: 'amanda.svg',
@@ -52,13 +55,22 @@ const Coaches = () => {
 
   return (
     <ChakraProvider>
-      <Box 
-        mb={10} 
-        bg={'white'} 
-        fontFamily={'sans-serif'}  
-        p={[5, 8, 10]}
-        transform={["scale(1)", "scale(0.95)", "scale(0.9)"]}
-      >
+      <Box mb={10} bg={'white'} fontFamily={'sans-serif'} p={[5, 8, 10]}>
+        <Flex 
+          justify={'center'}      
+          mb={7}  
+        >
+          <Badge 
+
+              colorScheme="blue"
+              fontSize="0.8em"
+              p={2}
+              borderRadius="md"
+              zIndex={2}
+            >
+              Coming Soon
+            </Badge>
+        </Flex>
         <Box pb={10} textAlign={'center'}>
           <Heading fontFamily={'sans-serif'} fontSize={["2xl", "3xl", "4xl"]}>
             Meet Our Coaches
@@ -80,13 +92,45 @@ const Coaches = () => {
             borderRadius={0} 
             color={'white'} 
             p={6} 
-            bg={'gray.800'}
-            w={["80%", "60%", "auto"]}
+            bg={'#247CF4'}
+            w={["50%", "40%", "auto"]}
+            onClick={() => setIsCardVisible(true)}
           >
             View All Coaches
           </Button>
         </Box>
       </Box>
+
+      {/* Coming Soon Overlay */}
+      {isCardVisible && (
+        <Box
+          position="fixed"
+          top={0}
+          left={0}
+          width="100%"
+          height="100%"
+          bg="rgba(0, 0, 0, 0.7)"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          zIndex={10}
+        >
+          <Box
+            bg="white"
+            p={8}
+            borderRadius="md"
+            textAlign="center"
+            maxW="400px"
+            boxShadow="lg"
+          >
+            <Heading fontSize="2xl" mb={4}>Coming Soon</Heading>
+            <Text mb={6}>We're working hard to bring you this feature. Stay tuned!</Text>
+            <Button onClick={() => setIsCardVisible(false)} bg="#247CF4" color="white">
+              Close
+            </Button>
+          </Box>
+        </Box>
+      )}
     </ChakraProvider>
   );
 };
