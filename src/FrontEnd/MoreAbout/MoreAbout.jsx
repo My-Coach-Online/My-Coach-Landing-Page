@@ -53,7 +53,7 @@ export const MoreAbout = () => {
           alignItems="center"
         >
 
-          <Button
+          {/* <Button
             fontFamily="inter"
             h={42}
             w={["80%", "180px"]}
@@ -66,7 +66,7 @@ export const MoreAbout = () => {
             
           >
             Rejoignez Nous!
-          </Button>
+          </Button> */}
         </Flex>
       </Box>
     </Flex>
