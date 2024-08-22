@@ -53,8 +53,7 @@ export const HeroSection = () => {
                 <Text
                     fontSize={["sm", "md", "lg"]}
                     mt={4}
-                    w={["100%", "100%", "85%"]}
-                    mx={["auto", "auto", "0"]}
+                    w={"-moz-fit-content"}
                     color={'gray.600'}
                     fontFamily={'sans-serif'}
                 >
@@ -64,33 +63,49 @@ export const HeroSection = () => {
                 <Flex
                     mt={8}
                     justifyContent={["center", "center", "flex-start"]}
+                    flexDirection={["column", "column",'column', "row"]}
                 >
                     <Button
-                        _hover={{ bg: "gray.600" }}
+                        alignSelf={'center'}
+                        fontFamily={'sans-serif'}
+                        w={'235px'}
+                        _hover={{ bg: "gray.700" }}
+                        mb={[5,5,5,0]}
                         h={12}
-                        w={"-moz-fit-content"}
-                        mr={3}
+                        mr={[0,0,0,3]}
                         bg={'#2d2d2d'}
                         color={'white'}
                         borderRadius={0}
+                        border={"none"}
+                        as={'a'}
+                        target='_blank'
+                        href="https://forms.gle/VfHoyqmrHxajCkU9A"
                     >
-                        Accès Avant Premier
+                        Rejoignez la liste d'attente
                     </Button>
 
-                    {/* <Button
+                    <Button
                         fontFamily={'sans-serif'}
-                        w={["130px", "140px", "150px"]}
+                        h={42}
+                        w={"235px"}
                         borderRadius={0}
-                        bg={'transparent'}
-                        color={'black'}
-                        fontWeight={'bold'}
-                        ml={3}
+                        bg="transparent"
+                        border="1px solid"
+                        color="black"
+                        fontWeight="bold"
+                        alignSelf={'center'}
+                        as={'a'}
+                        target='_blank'
+                        href="https://forms.gle/fhi9MnNtuRSupPodA"
                     >
-                        <img style={{ marginRight: 12, width: 28 }} src="play-circle.svg" alt="play" />
-                        Play video
-                    </Button> */}
+                         Rejoignez en tant que Coach
+                    </Button>
                 </Flex>
 
+                <Flex
+                    justify={['center','center', 'center',  'start']}
+                >
+                    
                 <Box
                     display="flex"
                     justifyContent={["center", "center", "flex-start"]}
@@ -109,6 +124,8 @@ export const HeroSection = () => {
                         <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
                     </Link>
                 </Box>
+                </Flex>
+
             </Box>
         </Flex>
     );
