@@ -56,19 +56,19 @@ const Footer = () => {
             <Stack spacing={2}>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaLinkedin />
-                <Link href="https://www.linkedin.com/company/mycoach1/" ml={2}>
+                <Link target='_blank' href="https://www.linkedin.com/company/mycoach1/" ml={2}>
                   LinkedIn
                 </Link>
               </Flex>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaFacebook />
-                <Link href="https://www.facebook.com/profile.php" ml={2}>
+                <Link target='_blank' href="https://www.facebook.com/profile.php?id=61564032957860" ml={2}>
                   Facebook
                 </Link>
               </Flex>
               <Flex align="center" justify={['center', 'center', 'start']}>
                 <FaInstagram />
-                <Link href="https://www.instagram.com/mycoachonline/" ml={2}>
+                <Link target='_blank' href="https://www.instagram.com/mycoachonline/" ml={2}>
                   Instagram
                 </Link>
               </Flex>

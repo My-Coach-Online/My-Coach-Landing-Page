@@ -112,17 +112,17 @@ export const HeroSection = () => {
                     alignItems="center"
                     mt={6}
                 >   
-                    <Link to="/https://www.linkedin.com/company/mycoach1/" >
+                    <a target='_blank' href="https://www.linkedin.com/company/mycoach1/" >
                         <Icon as={FaLinkedin} w={6} h={6} color="#2d2d2d" mx={2} />                    
-                    </Link>
+                    </a>
 
-                    <Link to="/https://www.facebook.com/profile.php" >
+                    <a target='_blank' href="https://www.instagram.com/mycoachonline/" >
                         <Icon as={FaInstagram} w={6} h={6} color="#2d2d2d" mx={2} />
-                    </Link>
+                    </a>
 
-                    <Link to="/https://www.instagram.com/mycoachonline/" >
+                    <a target='_blank' href="https://www.facebook.com/profile.php?id=61564032957860" >
                         <Icon as={FaFacebook} w={6} h={6} color="#2d2d2d" mx={2} />
-                    </Link>
+                    </a>
                 </Box>
                 </Flex>
 
