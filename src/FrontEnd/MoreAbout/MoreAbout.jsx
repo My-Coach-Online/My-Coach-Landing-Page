@@ -17,7 +17,7 @@ export const MoreAbout = () => {
         <Image
           order={[1,2,2]}
           boxSize={["85%", "85%", "100%"]}
-          src="woman-helping-man-gym.jpg"
+          src="woman-helping-man-gym-optimized.jpg"
           alt="coaching"
           mx={["auto", "auto", "0"]}
           borderRadius="md"
