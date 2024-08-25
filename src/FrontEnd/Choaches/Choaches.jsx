@@ -34,15 +34,15 @@ const Coaches = () => {
 
   const trainers = [
     {
-      image: 'amanda.svg',
-      name: 'Amanda',
+      image: 'bader.jpg',
+      name: 'Bader',
       rating: 5,
       specialisations: 'Crossfit Expert, Nutrition & Rehab',
     },
     {
-      image: 'madison.svg',
-      name: 'Madison Froning',
-      rating: 5,
+      image: 'Omar.jpg',
+      name: 'Omar',
+      rating: 4,
       specialisations: 'Crossfit Expert, Nutrition & Rehab',
     },
     {
