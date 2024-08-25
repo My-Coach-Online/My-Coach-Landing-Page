@@ -9,7 +9,7 @@ export const HeroSection = () => {
             mx="auto"
             mb={[10, 10, 0]}
             bg={'white'}
-            flexDirection={["column", "column", "row"]}
+            flexDirection={["column", "column", "column", "row"]}
             alignItems="center"
             justifyContent="space-between"
             p={[4, 6, 8]}
@@ -19,11 +19,11 @@ export const HeroSection = () => {
             {/* Image Section */}
             <Box
                 w={["100%", "90%", "50%"]}
-                textAlign={["center", "center", "right"]}
+                textAlign={["center", "center","center", "right"]}
                 mb={[5, 5, 0]}
             >
                 <Image
-                    boxSize={["80%", "70%", "90%"]}
+                    boxSize={["80%", "70%","70%", "90%"]}
                     mx={["auto", "auto", "0"]}
                     src={"woman-doing-workout-gym-with-trainer-optimizes.jpg"}
                     alt="coaches"
@@ -37,7 +37,7 @@ export const HeroSection = () => {
                 m={5}
                 w={["100%", "80%", "50%"]}
                 pos={'relative'}
-                textAlign={["center", "center", "left"]}
+                textAlign={["center", "center","center", "left"]}
                 fontFamily={'sans-serif'}
             >
                 <Heading

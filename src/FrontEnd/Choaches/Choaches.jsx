@@ -13,7 +13,7 @@ const TrainerCard = ({ image, name, rating, specialisations }) => {
       width={["80%", "45%", "sm"]}
       
     >
-      <Image src={image} alt={name} objectFit="cover" w="100%" h={["200px", "250px", "300px"]} />
+      <Image src={image} alt={name} objectFit="none" w="100%" h={["200px", "250px", "300px"]} />
       <Box p={4} bg="gray.800" color="white">
         <Flex justify="space-between" align="center" mb={2}>
           <Heading as="h3" fontWeight={'regular'} size="md">{name}</Heading>
