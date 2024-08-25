@@ -46,10 +46,10 @@ const Coaches = () => {
       specialisations: 'Crossfit Expert, Nutrition & Rehab',
     },
     {
-      image: 'joshua.svg',
-      name: 'Joshua Franklin',
+      image: 'box-women.jpg',
+      name: 'Samira',
       rating: 5,
-      specialisations: 'Crossfit Expert, Nutrition & Rehab',
+      specialisations: 'Boxing, Nutrition & Rehab',
     },
   ];
 
