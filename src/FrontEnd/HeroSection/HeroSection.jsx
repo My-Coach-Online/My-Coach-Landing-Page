@@ -25,7 +25,7 @@ export const HeroSection = () => {
                 <Image
                     boxSize={["80%", "70%", "90%"]}
                     mx={["auto", "auto", "0"]}
-                    src={"woman-doing-workout-gym-with-trainer.jpg"}
+                    src={"woman-doing-workout-gym-with-trainer-optimizes.jpg"}
                     alt="coaches"
                     borderRadius="md"
                     objectFit="cover"
@@ -79,7 +79,7 @@ export const HeroSection = () => {
                         border={"none"}
                         as={'a'}
                         target='_blank'
-                        href="https://forms.gle/VfHoyqmrHxajCkU9A"
+                        href="https://forms.gle/L8Kh8xLqSdynyacn7"
                     >
                         Rejoignez la liste d'attente
                     </Button>
@@ -96,7 +96,7 @@ export const HeroSection = () => {
                         alignSelf={'center'}
                         as={'a'}
                         target='_blank'
-                        href="https://forms.gle/fhi9MnNtuRSupPodA"
+                        href="https://forms.gle/QGVzkTqWWHnRTjcX6"
                     >
                          Rejoignez en tant que Coach
                     </Button>
