@@ -18,7 +18,7 @@ export const HeroSection = () => {
         >
             {/* Image Section */}
             <Box
-                w={["100%", "90%", "50%"]}
+                w={["100%", "90%","80%", "50%"]}
                 textAlign={["center", "center","center", "right"]}
                 mb={[5, 5, 0]}
             >
@@ -35,7 +35,7 @@ export const HeroSection = () => {
             {/* Text Section */}
             <Box
                 m={5}
-                w={["100%", "80%", "50%"]}
+                w={["100%", "80%","80%", "50%"]}
                 pos={'relative'}
                 textAlign={["center", "center","center", "left"]}
                 fontFamily={'sans-serif'}
