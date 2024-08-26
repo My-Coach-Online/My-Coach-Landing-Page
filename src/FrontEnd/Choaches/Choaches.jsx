@@ -22,7 +22,7 @@ const TrainerCard = ({ image, name, rating, specialisations }) => {
             <Text ml={1}>{rating}/5</Text>
           </Flex>
         </Flex>
-        <Text fontWeight="bold">Specialisations:</Text>
+        <Text fontWeight="bold">Spécialisations:</Text>
         <Text>{specialisations}</Text>
       </Box>
     </Box>
@@ -37,19 +37,19 @@ const Coaches = () => {
       image: 'Simo.webp',
       name: 'Bader',
       rating: 5,
-      specialisations: 'Crossfit Expert, Nutrition & Rehab',
+      specialisations: 'Coach de bien-être',
     },
     {
       image: 'Lazar-PT-Dubai.jpeg.webp',
       name: 'Omar',
       rating: 4,
-      specialisations: 'Crossfit Expert, Nutrition & Rehab',
+      specialisations: 'Instructeur de musculation',
     },
     {
       image: 'box-women.jpg',
       name: 'Samira',
       rating: 5,
-      specialisations: 'Boxing, Nutrition & Rehab',
+      specialisations: 'Instructeur de kickboxing & Box ',
     },
   ];
 
@@ -68,12 +68,12 @@ const Coaches = () => {
               borderRadius="md"
               zIndex={2}
             >
-              Coming Soon
+              Bientôt Disponible
             </Badge>
         </Flex>
         <Box pb={10} textAlign={'center'}>
           <Heading fontFamily={'sans-serif'} fontSize={["2xl", "3xl", "4xl"]}>
-            Meet Our Coaches
+            Rencontrez Nos Coachs
           </Heading>
         </Box>
         <Flex justify="center" wrap="wrap">
@@ -96,7 +96,7 @@ const Coaches = () => {
             w={["50%", "40%", "auto"]}
             onClick={() => setIsCardVisible(true)}
           >
-            View All Coaches
+            Voir Tous Les Coachs
           </Button>
         </Box>
       </Box>
@@ -123,10 +123,10 @@ const Coaches = () => {
             maxW="400px"
             boxShadow="lg"
           >
-            <Heading fontSize="2xl" mb={4}>Coming Soon</Heading>
-            <Text mb={6}>We're working hard to bring you this feature. Stay tuned!</Text>
+            <Heading fontSize="2xl" mb={4}>Rencontrez Nos Coachs</Heading>
+            <Text mb={6}>Nous travaillons dur pour vous apporter cette fonctionnalité. Restez à l'écoute !</Text>
             <Button onClick={() => setIsCardVisible(false)} bg="#247CF4" color="white">
-              Close
+              Fermer
             </Button>
           </Box>
         </Box>
