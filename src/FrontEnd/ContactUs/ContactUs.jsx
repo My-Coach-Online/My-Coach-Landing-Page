@@ -32,7 +32,7 @@ const ContactUs = () => {
 
   return (
     <ChakraProvider>
-      <Box mt={10} fontFamily={'sans-serif'} mb={4} bg="white" textAlign={'center'}>
+      <Box id='Contact' mt={10} fontFamily={'sans-serif'} mb={4} bg="white" textAlign={'center'}>
         <Heading>
           Formulaire de Contact
         </Heading>

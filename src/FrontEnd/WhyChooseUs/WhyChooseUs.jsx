@@ -3,7 +3,15 @@ import { ChakraProvider, Box, Flex, Text, Image, Heading } from '@chakra-ui/reac
 
 function WhyChooseUs() {
   return (
-    <Box bg={'white'} fontFamily={'sans-serif'} mt={10} p={[5, 10, 20]} textAlign="center">
+    <Box 
+      bg={'white'} 
+      fontFamily={'sans-serif'} 
+      mt={10} 
+      p={[5, 10, 20]} 
+      textAlign="center"
+      id='WhyChooseUs'
+    >
+
       <Heading as="h2" size="xl" mb={4}>
       Pourquoi Nous Choisir
 

@@ -4,6 +4,7 @@ import React from "react";
 export const MoreAbout = () => {
   return (
     <Flex
+      id="About"
       flexDirection={["column", "column", "column", "row-reverse"]}
       pt={[5, 10]}
       pb={[50, 100]}
