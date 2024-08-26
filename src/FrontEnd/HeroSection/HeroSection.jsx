@@ -27,7 +27,7 @@ export const HeroSection = () => {
                 <Image
                     boxSize={["80%", "70%", "70%", "90%"]}
                     mx="auto"
-                    src={"woman-doing-workout-gym-with-trainer-optimizes.jpg"}
+                    src={"Gym-trainer.jpg"}
                     alt="coaches"
                     borderRadius="md"
                     objectFit="cover"
