@@ -25,7 +25,7 @@ export const Header = () => {
           color={'gray.600'}
           fontFamily={'sans-serif'}
           fontWeight={500}
-          display={["none", "none", "flex"]}  // Hidden on small screens
+          display={["none", "none","none", "flex"]}  // Hidden on small screens
         >
           <a href="#Home">Accueil</a>
           <a href="#About">À Propos</a>
@@ -38,7 +38,7 @@ export const Header = () => {
         <IconButton
           aria-label="Open Menu"
           icon={<FaBars />}
-          display={["flex", "flex", "none"]}  // Visible on small screens
+          display={["flex", "flex","flex", "none"]}  // Visible on small screens
           onClick={toggleDrawer}
         />
 
