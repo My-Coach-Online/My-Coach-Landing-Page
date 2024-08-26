@@ -87,12 +87,12 @@ const Coaches = () => {
             />
           ))}
         </Flex>
-        <Box mt={16} textAlign={'center'}>
+        <Box mt={10} textAlign={'center'}>
           <Button 
             borderRadius={0} 
             color={'white'} 
             p={6} 
-            bg={'#247CF4'}
+            bg={'gray.800'}
             w={["50%", "40%", "auto"]}
             onClick={() => setIsCardVisible(true)}
           >
