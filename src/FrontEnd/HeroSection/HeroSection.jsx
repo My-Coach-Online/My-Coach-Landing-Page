@@ -23,6 +23,7 @@ export const HeroSection = () => {
                 mb={[5, 5, 0]}
                 justifyContent="center"
                 alignItems="center"
+                
             >
                 <Image
                     boxSize={["80%", "70%", "70%", "90%"]}
