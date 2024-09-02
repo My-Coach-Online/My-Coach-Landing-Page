@@ -23,7 +23,7 @@ export const HowItWorks = () => {
         m={50}
       >
         {/* Step 1 */}
-        <Box bg={'white'} p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
+        <Box marginX={[0,2,5]} bg={'white'} p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
           <Flex justify={'center'} mb={4}>
             <Image src="searchIcon.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
@@ -36,7 +36,7 @@ export const HowItWorks = () => {
         </Box>
 
         {/* Step 2 */}
-        <Box bg="white" p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
+        <Box marginX={[0,2,5]} bg="white" p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
           <Flex justify={'center'} mb={4}>
             <Image src="Calendar.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
@@ -49,7 +49,7 @@ export const HowItWorks = () => {
         </Box>
 
         {/* Step 3 */}
-        <Box bg="white" p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
+        <Box marginX={[0,2,5]} bg="white" p={6} borderRadius={20} m={4} width={["90%", "300px"]} mx="auto">
           <Flex justify={'center'} mb={4}>
             <Image src="success.svg" boxSize={["80px", "100px", "120px"]} />
           </Flex>
@@ -59,6 +59,7 @@ export const HowItWorks = () => {
           <Text color="gray.600">
               Suivez votre plan personnalisé et recevez des retours.
           </Text>
+          <br/>
         </Box>
       </Flex>
     </Box>

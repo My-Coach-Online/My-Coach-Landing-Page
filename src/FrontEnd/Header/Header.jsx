@@ -49,9 +49,9 @@ export const Header = () => {
             <DrawerCloseButton />
             <DrawerBody>
               <Stack spacing={4} mt={10}>
-                <a onClick={toggleDrawer}>Accueil</a>
-                <a onClick={toggleDrawer}>À Propos</a>
-                <a onClick={toggleDrawer}>Pourquoi Nous Choisir</a>
+                <a to="#HowItWorks" onClick={toggleDrawer}>Accueil</a>
+                <a to="#HowItWorks" onClick={toggleDrawer}>À Propos</a>
+                <a to="#HowItWorks" onClick={toggleDrawer}>Pourquoi Nous Choisir</a>
                 <a to="#HowItWorks" onClick={toggleDrawer}>Comment Ça Marche</a>
                 <a onClick={toggleDrawer}>Contact</a>
               </Stack>
@@ -66,6 +66,8 @@ export const Header = () => {
           color={'white'}
           as={'a'}
           display={["none", "none", "inline-flex"]}  // Hidden on small screens
+          _hover={{bg : 'gray.600'}}
+          href="#Contact"
         >
           Rejoignez Nous!
         </Button>
